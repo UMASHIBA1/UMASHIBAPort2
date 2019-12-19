@@ -1,0 +1,17 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-react",
+        "tslint-config-prettier",
+        "tslint-react-hooks"
+    ],
+    "rulesDirectory": [
+        "tslint-plugin-prettier"
+    ],
+    "rules": {
+        "prettier": true,
+        "interface-name": false,
+        "react-hooks-nesting": "error",
+        "object-literal-sort-keys": false
+    }
+}
