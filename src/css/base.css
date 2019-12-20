@@ -1,0 +1,50 @@
+:root {
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --pink-color: #E4007F;
+    --yellow-color: #FFF100;
+    --blue-color: #00A0E9;
+    --purple-color: #920783;
+}
+
+.page-box {
+    width: 100%;
+    height: 100%;
+}
+
+.black-background {
+    background-color: var(--black-color);
+}
+
+.white-background {
+    background-color: var(--white-color);
+}
+
+.pink-background {
+    background-color: var(--pink-color);
+}
+
+.yellow-background {
+    background-color: var(--yellow-color);
+}
+
+.blue-background {
+    background-color: var(--blue-color);
+}
+
+.purple-background {
+    background-color: var(--purple-color);
+}
+
+.black {
+    color: var(--black-color);
+}
+
+.white {
+    color: var(--white-color);
+}
+
+.maximum-expand {
+    width: 100%;
+    height: 100%;
+}
