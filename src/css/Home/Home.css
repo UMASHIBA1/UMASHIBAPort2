@@ -1,0 +1,8 @@
+.background {
+    z-index: 10;
+}
+
+.colorful-materials {
+    z-index: 50;
+    position: absolute;
+}
