@@ -3,25 +3,27 @@
 }
 
 .center-title-text-container {
-    margin-top: 26vh;
+    /* margin-top: 26vh; */
     position: absolute;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
-    height: 12vw;
+    /* height: 12vw; */
     /* max-height: 9vw; */
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    margin: auto;
 }
 
 .black-text-layer {
     z-index: 102;
 }
 
-.white-text-layer {
+.back-text-layer {
     z-index: 101;
-}
-
-.white-text-layer>span {
-    text-shadow: #ffffff 0px 1px 0, #ffffff 0px -1px 0;
 }
 
 .center-title-text {
@@ -31,58 +33,33 @@
     line-height: 12vw;
     font-size: 10vw;
     opacity: 0;
+    fill: var(--black-color)
 }
 
-.hello-world-white-text {
+.hello-world-text {
     animation: fadein 1s ease 0.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 1.5s forwards;
 }
 
-.hello-world-black-text {
-    opacity: 1;
-    animation: fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 1.5s forwards;
-}
-
-
-.im-umashiba-black-text {
-    animation: fadein 0s ease 1.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 2.5s forwards;
-}
-
-.im-umashiba-white-text {
+.im-umashiba-text {
     animation: fadein 1s ease 1.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 2.5s forwards;
 }
 
-
-.web-developer-black-text {
-    animation: fadein 0s ease 2.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 3.5s forwards;
-}
-
-.web-developer-white-text {
+.web-developer-text {
     animation: fadein 1s ease 2.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 3.5s forwards;
 }
 
-
-.welcome-black-text {
-    animation: fadein 0s ease 3.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 4.5s forwards;
-}
-
-.welcome-white-text {
+.welcome-text {
     animation: fadein 1s ease 3.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 4.5s forwards;
 }
 
-
-.my-portfolio-black-text {
-    animation: fadein 0s ease 4.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 5.5s forwards;
-}
-
-.my-portfolio-white-text {
+.my-portfolio-text {
     animation: fadein 1s ease 4.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 5.5s forwards;
 }
 
-
-.please-enjoy-black-text {
-    animation: fadein 0s ease 5.5s forwards, fadeout 0s cubic-bezier(0.31, 0.63, 0.64, 0.58) 6.8s forwards;
+.please-enjoy-text {
+    animation: fadein 1s ease 5.5s forwards, fadeout 0.2s cubic-bezier(0.31, 0.63, 0.64, 0.58) 6.5s forwards;
 }
 
-.please-enjoy-white-text {
-    animation: fadein 1s ease 5.5s forwards, fadeout 0.2s cubic-bezier(0.31, 0.63, 0.64, 0.58) 6.5s forwards;
+.umashiba-port-text {
+    animation: fadein 1s ease 6.7s forwards;
 }

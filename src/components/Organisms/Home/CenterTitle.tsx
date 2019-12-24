@@ -9,72 +9,121 @@ const CenterTitle: React.FC = () => {
   const welcomeTo = "Welcome To";
   const myFolio = "My Portfolio";
   const pleaseEnjoy = "Please Enjoy!";
+  const umashibaPort = "UMASHIBA Port";
   return (
     <div className="maximum-expand center-title">
-      <div className="center-title-text-container black-text-layer">
-        <span className="center-title-text hello-world-black-text black">
-          {helloWorld}
-        </span>
+      <div className="center-title-text-container back-text-layer">
+        <svg height="calc(26vh + 12vw)" width="100%">
+          <linearGradient id="hello-world-center-text-linear" x1="10%">
+            <stop offset="0%" stopColor="#e4007f" />
+          </linearGradient>
+          <text
+            y="26vh"
+            x="50%"
+            textAnchor="middle"
+            stroke="url(#hello-world-center-text-linear)"
+            className="center-title-text hello-world-text"
+          >
+            {helloWorld}
+          </text>
+        </svg>
       </div>
-      <div className="center-title-text-container white-text-layer">
-        <span className="center-title-text hello-world-white-text">
-          {helloWorld}
-        </span>
+      <div className="center-title-text-container back-text-layer">
+        <svg height="calc(26vh + 12vw)" width="100%">
+          <linearGradient id="im-umashiba-center-text-linear" x1="10%">
+            <stop offset="0%" stopColor="#e4007f" />
+          </linearGradient>
+          <text
+            y="26vh"
+            x="50%"
+            textAnchor="middle"
+            stroke="url(#im-umashiba-center-text-linear)"
+            className="center-title-text im-umashiba-text"
+          >
+            {ImUmashiba}
+          </text>
+        </svg>
+      </div>
+      <div className="center-title-text-container back-text-layer">
+        <svg height="calc(26vh + 12vw)" width="100%">
+          <linearGradient id="web-developer-center-text-linear" x1="10%">
+            <stop offset="0%" stopColor="#e4007f" />
+          </linearGradient>
+          <text
+            y="26vh"
+            x="50%"
+            textAnchor="middle"
+            stroke="url(#web-developer-center-text-linear)"
+            className="center-title-text web-developer-text"
+          >
+            {webDeveloper}
+          </text>
+        </svg>
+      </div>
+      <div className="center-title-text-container back-text-layer">
+        <svg height="calc(26vh + 12vw)" width="100%">
+          <linearGradient id="center-text-linear" x1="10%">
+            <stop offset="0%" stopColor="#e4007f" />
+          </linearGradient>
+          <text
+            y="26vh"
+            x="50%"
+            textAnchor="middle"
+            stroke="url(#center-text-linear)"
+            className="center-title-text welcome-text"
+          >
+            {welcomeTo}
+          </text>
+        </svg>
       </div>
 
-      <div className="center-title-text-container black-text-layer">
-        <span className="center-title-text im-umashiba-black-text black">
-          {ImUmashiba}
-        </span>
+      <div className="center-title-text-container back-text-layer">
+        <svg height="calc(26vh + 12vw)" width="100%">
+          <linearGradient id="center-text-linear" x1="10%">
+            <stop offset="0%" stopColor="#e4007f" />
+          </linearGradient>
+          <text
+            y="26vh"
+            x="50%"
+            textAnchor="middle"
+            stroke="url(#center-text-linear)"
+            className="center-title-text my-portfolio-text"
+          >
+            {myFolio}
+          </text>
+        </svg>
       </div>
-      <div className="center-title-text-container white-text-layer">
-        <span className="center-title-text im-umashiba-white-text">
-          {ImUmashiba}
-        </span>
+      <div className="center-title-text-container back-text-layer">
+        <svg height="calc(26vh + 12vw)" width="100%">
+          <linearGradient id="center-text-linear" x1="10%">
+            <stop offset="0%" stopColor="#e4007f" />
+          </linearGradient>
+          <text
+            y="26vh"
+            x="50%"
+            textAnchor="middle"
+            stroke="url(#center-text-linear)"
+            className="center-title-text please-enjoy-text"
+          >
+            {pleaseEnjoy}
+          </text>
+        </svg>
       </div>
-
-      <div className="center-title-text-container black-text-layer">
-        <span className="center-title-text web-developer-black-text black">
-          {webDeveloper}
-        </span>
-      </div>
-      <div className="center-title-text-container white-text-layer">
-        <span className="center-title-text web-developer-white-text">
-          {webDeveloper}
-        </span>
-      </div>
-
-      <div className="center-title-text-container black-text-layer">
-        <span className="center-title-text welcome-black-text  black">
-          {welcomeTo}
-        </span>
-      </div>
-      <div className="center-title-text-container white-text-layer">
-        <span className="center-title-text welcome-white-text ">
-          {welcomeTo}
-        </span>
-      </div>
-
-      <div className="center-title-text-container black-text-layer">
-        <span className="center-title-text my-portfolio-black-text  black">
-          {myFolio}
-        </span>
-      </div>
-      <div className="center-title-text-container white-text-layer">
-        <span className="center-title-text my-portfolio-white-text ">
-          {myFolio}
-        </span>
-      </div>
-
-      <div className="center-title-text-container black-text-layer">
-        <span className="center-title-text please-enjoy-black-text  black">
-          {pleaseEnjoy}
-        </span>
-      </div>
-      <div className="center-title-text-container white-text-layer">
-        <span className="center-title-text please-enjoy-white-text ">
-          {pleaseEnjoy}
-        </span>
+      <div className="center-title-text-container back-text-layer">
+        <svg height="calc(26vh + 12vw)" width="100%">
+          <linearGradient id="umashiba-port-center-text-linear" x1="10%">
+            <stop offset="0%" stopColor="#e4007f" />
+          </linearGradient>
+          <text
+            y="26vh"
+            x="50%"
+            textAnchor="middle"
+            stroke="url(#umashiba-port-center-text-linear)"
+            className="center-title-text umashiba-port-text"
+          >
+            {umashibaPort}
+          </text>
+        </svg>
       </div>
     </div>
   );
