@@ -11,3 +11,5 @@ const reduxStore = createStore(
 );
 
 export default reduxStore;
+
+export type DispatchType = typeof reduxStore.dispatch;
