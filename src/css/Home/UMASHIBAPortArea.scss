@@ -2,8 +2,14 @@
     position: relative;
     z-index: 100;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: flex-end;
     background-color: var(--pink-color);
     min-height: 25vh;
+}
 
+.home-h1-title {
+    position: absolute;
+    top: 30%;
+    left: 10%;
 }
