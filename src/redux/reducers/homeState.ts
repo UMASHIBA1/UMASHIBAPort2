@@ -1,4 +1,4 @@
-import { HomeState } from "../../typing/home/homeState";
+import { HomeState } from "../../typing/redux/home/homeState";
 import { changeFocusedArea } from "../actions/homeAction";
 import homeActionTypes from "../actionTypes/homeActionTypes";
 import { CHANGE_FOCUSED_AREA } from "../constants/homeTypes";

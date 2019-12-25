@@ -1,7 +1,7 @@
-import { HomeState } from "../../typing/home/homeState";
+import { HomeState } from "../../typing/redux/home/homeState";
 
 const homeState: HomeState = {
-  focusedArea: ""
+  focusedArea: "umashibaPort"
 };
 
 export default homeState;

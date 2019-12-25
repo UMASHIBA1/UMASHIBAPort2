@@ -1,4 +1,4 @@
-import { FocusedAreaTypes, HomeState } from "../../typing/home/homeState";
+import { FocusedAreaTypes, HomeState } from "../../typing/redux/home/homeState";
 
 export const changeFocusedArea = (
   focusedArea: FocusedAreaTypes,

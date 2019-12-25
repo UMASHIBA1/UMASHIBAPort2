@@ -1,4 +1,4 @@
-import { FocusedAreaTypes } from "../../typing/home/homeState";
+import { FocusedAreaTypes } from "../../typing/redux/home/homeState";
 import { CHANGE_FOCUSED_AREA } from "../constants/homeTypes";
 
 export interface ChangeFocusedAreaAction {
