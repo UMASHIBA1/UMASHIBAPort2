@@ -1,15 +1,11 @@
 import React from "react";
-import "../../css/Home/Home.css";
-import CenterTitle from "../Organisms/Home/CenterTitle";
-import ColorfulBackground from "../Organisms/Home/ColorfulBackground";
+import "../../css/Home/Home.scss";
+import ColorfulBackground from "../Organisms/Home/ColofulBackGround";
 
 const Home: React.FC = () => {
   return (
-    <div className="page-box black-background white background">
+    <div className="page-box white background">
       <ColorfulBackground />
-      <main className="maximum-expand">
-        <CenterTitle />
-      </main>
     </div>
   );
 };

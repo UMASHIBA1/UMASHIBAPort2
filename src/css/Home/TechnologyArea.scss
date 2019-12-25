@@ -1,0 +1,19 @@
+#technology-area {
+    position: relative;
+    z-index: 101;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--orange-color);
+    min-height: 25vh;
+
+
+    div {
+        position: absolute;
+        left: -60%;
+        top: -8%;
+        width: 200%;
+        height: 30%;
+        background-color: var(--orange-color);
+        transform: rotate(-5deg);
+    }
+}

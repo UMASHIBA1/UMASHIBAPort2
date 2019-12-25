@@ -1,0 +1,9 @@
+#umashiba-port-area {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: var(--pink-color);
+    min-height: 25vh;
+
+}
