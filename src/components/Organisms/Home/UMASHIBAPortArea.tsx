@@ -16,7 +16,9 @@ const UMASHIBAPortArea: React.FC = () => {
   return (
     <div id="umashiba-port-area">
       <div onMouseOver={floatThis} />
-      <HomeH1 className="umashiba-port-home-h1">UMASHIBA Port</HomeH1>
+      <HomeH1 onMouseOverFC={floatThis} className="umashiba-port-home-h1">
+        UMASHIBA Port
+      </HomeH1>
       <object onMouseOver={floatThis} type="image/svg+xml" data={pink_design} />
     </div>
   );

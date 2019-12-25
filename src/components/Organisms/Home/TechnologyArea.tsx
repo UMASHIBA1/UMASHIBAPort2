@@ -26,7 +26,9 @@ const TechnologyArea: React.FC = () => {
     <React.Fragment>
       <div id="technology-area">
         <div onMouseOver={floatThis} className={shadowClassName} />
-        <HomeH1 className="technology-home-h1">Technology</HomeH1>
+        <HomeH1 onMouseOverFC={floatThis} className="technology-home-h1">
+          Technology
+        </HomeH1>
         <object
           onMouseOver={floatThis}
           type="image/svg+xml"

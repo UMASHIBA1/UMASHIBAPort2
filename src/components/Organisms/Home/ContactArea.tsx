@@ -25,7 +25,9 @@ const ContactArea: React.FC = () => {
     <React.Fragment>
       <div id="contact-area">
         <div onMouseOver={floatThis} className={shadowClassName} />
-        <HomeH1 className="contact-home-h1">Contact</HomeH1>
+        <HomeH1 onMouseOverFC={floatThis} className="contact-home-h1">
+          Contact
+        </HomeH1>
         <object
           onMouseOver={floatThis}
           type="image/svg+xml"
