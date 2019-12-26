@@ -8,14 +8,28 @@
     }
 }
 
+@keyframes show-line {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 
 .home-h1-container {
     overflow: hidden;
-}
 
-.home-h1 {
-    font-size: 6.5vw;
-    margin: 0;
+    svg {
+        text {
+            animation-name: show-line;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            stroke: #ffffff;
+            stroke-width: 1px;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+        }
+    }
 
     &:before {
         content: "";
@@ -27,6 +41,10 @@
         height: 100%;
         background-color: #ffffff;
         transform: translateX(-100%);
-        animation: bgslide-left-to-right 1s 0.5s forwards;
+        animation-name: bgslide-left-to-right;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+        animation-fill-mode: forwards;
     }
+
 }

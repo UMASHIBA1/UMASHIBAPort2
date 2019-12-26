@@ -11,11 +11,22 @@
         background-color: var(--blue-color);
         transform: rotate(5deg);
     }
-
 }
 
 .works-home-h1 {
     position: absolute;
     top: 30%;
     right: 20%;
+
+
+    svg {
+        text {
+            animation-delay: 2.4s;
+        }
+    }
+
+    &:before {
+        animation-delay: 1.3s;
+    }
+
 }

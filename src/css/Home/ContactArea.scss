@@ -17,4 +17,14 @@
     position: absolute;
     top: 40%;
     right: 20%;
+
+    svg {
+        text {
+            animation-delay: 4s;
+        }
+    }
+
+    &:before {
+        animation-delay: 2.9s;
+    }
 }
