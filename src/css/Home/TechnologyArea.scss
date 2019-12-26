@@ -2,7 +2,7 @@
     z-index: 101;
     background-color: var(--orange-color);
 
-    div {
+    div:first-of-type {
         position: absolute;
         left: -60%;
         top: -8%;

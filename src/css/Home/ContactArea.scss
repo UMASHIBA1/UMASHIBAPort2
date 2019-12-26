@@ -2,7 +2,7 @@
     z-index: 102;
     background-color: var(--green-color);
 
-    div {
+    div:first-child {
         position: absolute;
         left: -60%;
         top: -10%;

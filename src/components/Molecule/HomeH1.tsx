@@ -9,12 +9,15 @@ interface Props {
 
 const HomeH1: React.FC<Props> = (props: Props) => {
   return (
-    <h1
-      onMouseOver={props.onMouseOverFC}
-      className={`home-h1${props.className ? " " + props.className : ""}`}
+    <div
+      className={`home-h1-container${
+        props.className ? " " + props.className : ""
+      }`}
     >
-      {props.children}
-    </h1>
+      <h1 onMouseOver={props.onMouseOverFC} className="home-h1">
+        {props.children}
+      </h1>
+    </div>
   );
 };
 

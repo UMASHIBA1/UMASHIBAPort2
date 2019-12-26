@@ -1,4 +1,32 @@
+@keyframes bgslide-left-to-right {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+.home-h1-container {
+    overflow: hidden;
+}
+
 .home-h1 {
     font-size: 6.5vw;
     margin: 0;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 101%;
+        height: 100%;
+        background-color: #ffffff;
+        transform: translateX(-100%);
+        animation: bgslide-left-to-right 1s 0.5s forwards;
+    }
 }
