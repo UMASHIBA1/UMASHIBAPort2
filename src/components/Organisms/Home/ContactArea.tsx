@@ -23,9 +23,12 @@ const ContactArea: React.FC = () => {
 
   return (
     <React.Fragment>
-      <div id="contact-area">
+      <div id="contact-area" className="home-area home-area-cursor">
         <div onMouseOver={floatThis} className={shadowClassName} />
-        <HomeH1 onMouseOverFC={floatThis} className="contact-home-h1">
+        <HomeH1
+          onMouseOverFC={floatThis}
+          className="contact-home-h1 home-area-cursor"
+        >
           Contact
         </HomeH1>
         <object

@@ -24,9 +24,15 @@ const WorksArea: React.FC = () => {
 
   return (
     <React.Fragment>
-      <div id="works-area">
-        <div onMouseOver={floatThis} className={shadowClassName} />
-        <HomeH1 onMouseOverFC={floatThis} className="works-home-h1">
+      <div id="works-area" className="home-area home-area-cursor">
+        <div
+          onMouseOver={floatThis}
+          className={`${shadowClassName} home-area-cursor`}
+        />
+        <HomeH1
+          onMouseOverFC={floatThis}
+          className="works-home-h1 home-area-cursor"
+        >
           Works
         </HomeH1>
         <object

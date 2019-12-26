@@ -24,9 +24,12 @@ const TechnologyArea: React.FC = () => {
 
   return (
     <React.Fragment>
-      <div id="technology-area">
+      <div id="technology-area" className="home-area home-area-cursor">
         <div onMouseOver={floatThis} className={shadowClassName} />
-        <HomeH1 onMouseOverFC={floatThis} className="technology-home-h1">
+        <HomeH1
+          onMouseOverFC={floatThis}
+          className="technology-home-h1 home-area-cursor"
+        >
           Technology
         </HomeH1>
         <object
