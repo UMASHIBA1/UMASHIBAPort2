@@ -5,7 +5,7 @@ import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import blue_design from "../../../statics/blue_design.svg";
 import { useTypedSelector } from "../../../typing/redux/hooks";
-import HomeH1 from "../../Atomics/HomeH1";
+import HomeH1 from "../../Atomics/Home/HomeH1";
 
 const WorksArea: React.FC = () => {
   const focusedArea = useTypedSelector(state => state.homeState.focusedArea);

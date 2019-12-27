@@ -1,6 +1,6 @@
 import React from "react";
-import "../../css/ColorPage/ColorPageTitle.scss";
-import { ColorNames } from "../../typing/colors";
+import "../../../css/ColorPage/ColorPageTitle.scss";
+import { ColorNames } from "../../../typing/colors";
 
 interface Props {
   children: string;

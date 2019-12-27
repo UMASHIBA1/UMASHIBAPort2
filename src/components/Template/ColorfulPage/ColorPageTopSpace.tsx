@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import "../../css/ColorPage/ColorPageTopSpace.scss";
+import "../../../css/ColorPage/ColorPageTopSpace.scss";
 
 interface Props {
   children: ReactNode;

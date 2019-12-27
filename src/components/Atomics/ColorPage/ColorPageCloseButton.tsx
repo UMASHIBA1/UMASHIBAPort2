@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../../css/ColorPage/ColorPageCloseButton.scss";
-import { ColorNames } from "../../typing/colors";
+import "../../../css/ColorPage/ColorPageCloseButton.scss";
+import { ColorNames } from "../../../typing/colors";
 
 interface Props {
   color: ColorNames;

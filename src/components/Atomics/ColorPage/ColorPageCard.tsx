@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-import "../../css/ColorPage/ColorPageCard.scss";
-import { ColorNames } from "../../typing/colors";
+import "../../../css/ColorPage/ColorPageCard.scss";
+import { ColorNames } from "../../../typing/colors";
 
 interface Props {
   children: ReactNode;

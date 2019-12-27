@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/Home/HomeH1.scss";
+import "../../../css/Home/HomeH1.scss";
 
 interface Props {
   children: string;

@@ -1,8 +1,7 @@
 import React from "react";
-import ColorPageCard from "../Atomics/ColorPageCard";
-import ColorPageCloseButton from "../Atomics/ColorPageCloseButton";
-import ColorPageTitle from "../Atomics/ColorPageTitle";
-import ColorPageTopSpace from "../Template/ColorPageTopSpace";
+import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
+import ColorPageTitle from "../Atomics/ColorPage/ColorPageTitle";
+import ColorPageTopSpace from "../Template/ColorfulPage/ColorPageTopSpace";
 
 const UMASHIBAPage = () => {
   return (
