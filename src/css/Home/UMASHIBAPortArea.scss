@@ -1,6 +1,8 @@
+@import '../constants.scss';
+
 #umashiba-port-area {
     z-index: 100;
-    background-color: var(--pink-color);
+    background-color: $pink-color;
 }
 
 .umashiba-port-home-h1 {

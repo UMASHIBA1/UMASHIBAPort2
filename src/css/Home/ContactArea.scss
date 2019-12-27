@@ -1,6 +1,8 @@
+@import '../constants.scss';
+
 #contact-area {
     z-index: 102;
-    background-color: var(--green-color);
+    background-color: $green-color;
 
     div:first-child {
         position: absolute;
@@ -8,7 +10,7 @@
         top: -10%;
         width: 200%;
         height: 30%;
-        background-color: var(--green-color);
+        background-color: $green-color;
         transform: rotate(5deg);
     }
 }

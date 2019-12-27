@@ -1,6 +1,8 @@
+@import '../constants.scss';
+
 #technology-area {
     z-index: 101;
-    background-color: var(--orange-color);
+    background-color: $orange-color;
 
     div:first-of-type {
         position: absolute;
@@ -8,7 +10,7 @@
         top: -8%;
         width: 200%;
         height: 30%;
-        background-color: var(--orange-color);
+        background-color: $orange-color;
         transform: rotate(-5deg);
     }
 }
