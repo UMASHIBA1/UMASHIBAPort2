@@ -1,0 +1,18 @@
+@import '../constants.scss';
+
+.color-page-title {
+    width: 160px;
+    height: 44px;
+    border-radius: 7px;
+    box-shadow: 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: $white-color;
+
+    span {
+        margin-bottom: 3px;
+    }
+}
