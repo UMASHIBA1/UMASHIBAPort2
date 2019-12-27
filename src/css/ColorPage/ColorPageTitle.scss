@@ -1,18 +1,29 @@
 @import '../constants.scss';
 
 .color-page-title {
-    width: 160px;
-    height: 44px;
+    width: 146px;
+    height: 40px;
     border-radius: 7px;
     box-shadow: 4px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     background-color: $white-color;
 
+    @media (min-width: $sm-breakpoint) {
+        font-size: 24px;
+        width: 160px;
+        height: 44px;
+        box-shadow: 4px 4px;
+    }
+
     span {
-        margin-bottom: 3px;
+        margin-bottom: 4px;
+
+        @media (min-width: $sm-breakpoint) {
+            margin-bottom: 3px;
+        }
     }
 }
