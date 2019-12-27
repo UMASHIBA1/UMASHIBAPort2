@@ -1,13 +1,4 @@
-:root {
-    --black-color: #000000;
-    --white-color: #FFFFFF;
-    --pink-color: #E4007F;
-    --yellow-color: #FFF100;
-    --blue-color: #00A0E9;
-    --orange-color: #F39800;
-    --purple-color: #920783;
-    --green-color: #8fc31f;
-}
+@import './constants.scss';
 
 .page-box {
     width: 100%;
@@ -15,36 +6,113 @@
 }
 
 .black-background {
-    background-color: var(--black-color);
+    background-color: $black-color;
 }
 
 .white-background {
-    background-color: var(--white-color);
+    background-color: $white-color;
 }
 
 .pink-background {
-    background-color: var(--pink-color);
-}
-
-.yellow-background {
-    background-color: var(--yellow-color);
+    background-color: $pink-color;
 }
 
 .blue-background {
-    background-color: var(--blue-color);
+    background-color: $blue-color;
 }
 
-.purple-background {
-    background-color: var(--purple-color);
+
+.accent-pink-background {
+    background-color: $accent-pink;
 }
+
+.accent-blue-background {
+    background-color: $accent-blue;
+}
+
+.accent-orange-background {
+    background-color: $accent-orange;
+}
+
+.accent-green-background {
+    background-color: $accent-green;
+}
+
+
+.deep-pink-background {
+    background-color: $deep-pink;
+}
+
+.deep-blue-background {
+    background-color: $deep-blue;
+}
+
+.deep-orange-background {
+    background-color: $deep-orange;
+}
+
+.deep-green-background {
+    background-color: $deep-green;
+}
+
 
 .black {
-    color: var(--black-color);
+    color: $black-color;
 }
 
 .white {
-    color: var(--white-color);
+    color: $white-color;
 }
+
+.pink {
+    color: $pink-color;
+}
+
+.blue {
+    color: $blue-color;
+}
+
+.orange {
+    color: $orange-color;
+}
+
+.green {
+    color: $green-color;
+}
+
+
+.accent-pink {
+    color: $accent-pink;
+}
+
+.accent-blue {
+    color: $accent-blue;
+}
+
+.accent-orange {
+    color: $accent-orange;
+}
+
+.accent-green {
+    color: $accent-green;
+}
+
+.deep-pink {
+    color: $deep-pink;
+}
+
+.deep-blue {
+    color: $deep-blue;
+}
+
+.deep-orange {
+    color: $deep-orange;
+}
+
+.deep-green {
+    color: $deep-green;
+}
+
 
 .maximum-expand {
     width: 100%;
