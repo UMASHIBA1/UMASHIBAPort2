@@ -4,7 +4,7 @@ import "../../../css/Home/UMASHIBAPortArea.scss";
 import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import pink_design from "../../../statics/pink_design.svg";
-import HomeH1 from "../../Molecule/HomeH1";
+import HomeH1 from "../../Atomics/HomeH1";
 
 const UMASHIBAPortArea: React.FC = () => {
   const dispatch: DispatchType = useDispatch();

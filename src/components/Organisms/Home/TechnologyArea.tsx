@@ -5,7 +5,7 @@ import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import orange_design from "../../../statics/orange_design.svg";
 import { useTypedSelector } from "../../../typing/redux/hooks";
-import HomeH1 from "../../Molecule/HomeH1";
+import HomeH1 from "../../Atomics/HomeH1";
 
 const TechnologyArea: React.FC = () => {
   const focusedArea = useTypedSelector(state => state.homeState.focusedArea);
