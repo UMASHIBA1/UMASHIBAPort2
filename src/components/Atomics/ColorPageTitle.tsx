@@ -9,7 +9,7 @@ interface Props {
 
 const ColorPageTitle: React.FC<Props> = (props: Props) => {
   return (
-    <div className={`color-page-title accent-${props.titleColor}`}>
+    <div className={`color-page-title deep-${props.titleColor}`}>
       <span className={`${props.titleColor}`}>{props.children}</span>
     </div>
   );
