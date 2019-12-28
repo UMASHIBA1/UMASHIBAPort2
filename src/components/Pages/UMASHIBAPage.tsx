@@ -18,7 +18,7 @@ const UMASHIBAPage = () => {
     <ColorPageSpace color="pink">
       <ColorPageTopSpace>
         <ColorPageTitle titleColor="pink">UMASHIBA</ColorPageTitle>
-        <ColorPageCloseButton color="pink" />
+        <ColorPageCloseButton isTopButton={true} color="pink" />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         <UMASHIBAPageCard title="「あなたはだぁれ？」">
@@ -30,6 +30,7 @@ const UMASHIBAPage = () => {
         <UMASHIBAPageCard title="「これからやりたいことは？」">
           {text3}
         </UMASHIBAPageCard>
+        <ColorPageCloseButton isTopButton={false} color="pink" />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );
