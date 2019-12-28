@@ -2,7 +2,7 @@
 
 .color-page-top-space {
     height: 60px;
-    width: 100%;
+    width: calc(100% - 28px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
