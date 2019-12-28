@@ -33,6 +33,7 @@
     margin: 10px 0 20px 0;
 
     @media (min-width: $sm-breakpoint) {
+        display: none;
         width: 140px;
         height: 60px;
         border-radius: 30px;
