@@ -1,0 +1,9 @@
+@import '../constants.scss';
+
+.color-page-content-space {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
