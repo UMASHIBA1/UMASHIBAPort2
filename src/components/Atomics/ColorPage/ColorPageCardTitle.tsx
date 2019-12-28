@@ -6,7 +6,7 @@ interface Props {
 }
 
 const ColorPageCardTitle: React.FC<Props> = (props: Props) => {
-  return <span className="umashiba-page-card-title">{props.children}</span>;
+  return <span className="color-page-card-title">{props.children}</span>;
 };
 
 export default ColorPageCardTitle;
