@@ -1,5 +1,17 @@
 @import './constants.scss';
 
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 .page-box {
     width: 100%;
     height: 100%;
