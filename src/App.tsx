@@ -2,9 +2,10 @@ import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Pages/Home";
+import UMASHIBAPage from "./components/Pages/UMASHIBAPage";
+import WorksPage from "./components/Pages/WorksPage";
 import "./css/base.scss";
 import reduxStore from "./redux/store";
-import UMASHIBAPage from "./components/Pages/UMASHIBAPage";
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,9 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/umashiba">
             <UMASHIBAPage />
+          </Route>
+          <Route path="/works">
+            <WorksPage />
           </Route>
           <Route path="/">
             <Home />
