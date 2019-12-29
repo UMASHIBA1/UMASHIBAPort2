@@ -1,0 +1,36 @@
+@import '../../constants.scss';
+
+.works-page-card {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+
+    .works-page-card-photo-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        border-radius: 12px;
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+    }
+
+    .works-page-card-sentense-container {
+        padding-left: 10px;
+        padding-top: 10px;
+
+        .works-page-card-description {
+            margin-top: 6px;
+            color: $white-color;
+            line-height: 1.8em;
+            padding-left: 4px;
+            padding-right: 10px;
+        }
+
+    }
+
+}
