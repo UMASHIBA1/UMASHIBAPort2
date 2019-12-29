@@ -2,14 +2,18 @@
 
 .color-page-content-space {
     height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    margin: auto;
+    overflow: auto;
+
 
     @media (min-width: $sm-breakpoint) {
         flex-direction: row;
-        margin-top: 100px;
         align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
