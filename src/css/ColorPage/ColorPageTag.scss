@@ -1,0 +1,20 @@
+@import '../constants.scss';
+
+.color-page-tag {
+    height: 22px;
+    min-width: 60px;
+    box-shadow: 2px 2px;
+    border-radius: 14px;
+    padding: 3px 12px 0px 12px;
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+
+    span {
+        color: $white-color;
+        text-align: center;
+    }
+}
