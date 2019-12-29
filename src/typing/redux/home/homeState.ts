@@ -1,7 +1,7 @@
 export type FocusedAreaTypes =
   | "umashibaPort"
   | "works"
-  | "technology"
+  | "skills"
   | "contact"
   | "";
 

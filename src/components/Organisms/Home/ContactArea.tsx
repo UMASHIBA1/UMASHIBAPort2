@@ -11,7 +11,7 @@ const ContactArea: React.FC = () => {
   const focusedArea = useTypedSelector(state => state.homeState.focusedArea);
   const dispatch: DispatchType = useDispatch();
   let shadowClassName = "";
-  if (focusedArea === "technology") {
+  if (focusedArea === "skills") {
     shadowClassName = "inset-shadow";
   } else if (focusedArea === "contact") {
     shadowClassName = "normal-shadow";

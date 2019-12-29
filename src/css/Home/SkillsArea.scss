@@ -1,6 +1,6 @@
 @import '../constants.scss';
 
-#technology-area {
+#skills-area {
     z-index: 101;
     background-color: $orange-color;
 
@@ -15,10 +15,10 @@
     }
 }
 
-.technology-home-h1 {
+.skills-home-h1 {
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 20%;
 
     svg {
         text {
