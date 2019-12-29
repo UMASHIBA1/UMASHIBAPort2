@@ -2,6 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Pages/Home";
+import SkillsPage from "./components/Pages/SkillsPage";
 import UMASHIBAPage from "./components/Pages/UMASHIBAPage";
 import WorksPage from "./components/Pages/WorksPage";
 import "./css/base.scss";
@@ -17,6 +18,9 @@ const App: React.FC = () => {
           </Route>
           <Route path="/works">
             <WorksPage />
+          </Route>
+          <Route path="/skills">
+            <SkillsPage />
           </Route>
           <Route path="/">
             <Home />
