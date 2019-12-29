@@ -1,0 +1,12 @@
+@import '../../constants.scss';
+
+.skills-page-card {
+    padding: 10px;
+    width: 400px;
+
+    .skills-page-card-description {
+        white-space: pre-line;
+        color: $white-color;
+        padding: 10px;
+    }
+}
