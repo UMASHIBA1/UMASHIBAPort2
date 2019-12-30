@@ -1,6 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ContactPage from "./components/Pages/ContactPage";
 import Home from "./components/Pages/Home";
 import SkillsPage from "./components/Pages/SkillsPage";
 import UMASHIBAPage from "./components/Pages/UMASHIBAPage";
@@ -21,6 +22,9 @@ const App: React.FC = () => {
           </Route>
           <Route path="/skills">
             <SkillsPage />
+          </Route>
+          <Route path="/contact">
+            <ContactPage />
           </Route>
           <Route path="/">
             <Home />
