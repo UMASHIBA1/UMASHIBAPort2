@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 import skillsData from "../../datas/skillsData";
 import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
 import ColorPageTitle from "../Atomics/ColorPage/ColorPageTitle";
@@ -8,11 +9,21 @@ import ColorPageSpace from "../Template/ColorPage/ColorPageSpace";
 import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const SkillsPage = () => {
+  const history = useHistory();
+
+  const gotoHome = () => {
+    history.push("/");
+  };
+
   return (
     <ColorPageSpace color="orange">
       <ColorPageTopSpace>
         <ColorPageTitle titleColor="orange">Skills</ColorPageTitle>
-        <ColorPageCloseButton isTopButton={true} color="orange" />
+        <ColorPageCloseButton
+          onClickFC={gotoHome}
+          isTopButton={true}
+          color="orange"
+        />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         {skillsData.map(({ title, description, tags }, index) => (
@@ -23,7 +34,11 @@ const SkillsPage = () => {
             tags={tags}
           />
         ))}
-        <ColorPageCloseButton isTopButton={false} color="orange" />
+        <ColorPageCloseButton
+          onClickFC={gotoHome}
+          isTopButton={false}
+          color="orange"
+        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );

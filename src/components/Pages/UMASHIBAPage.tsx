@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 import umashibaData from "../../datas/umashibaData";
 import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
 import ColorPageTitle from "../Atomics/ColorPage/ColorPageTitle";
@@ -8,11 +9,21 @@ import ColorPageSpace from "../Template/ColorPage/ColorPageSpace";
 import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const UMASHIBAPage = () => {
+  const history = useHistory();
+
+  const gotoHome = () => {
+    history.push("/");
+  };
+
   return (
     <ColorPageSpace color="pink">
       <ColorPageTopSpace>
         <ColorPageTitle titleColor="pink">UMASHIBA</ColorPageTitle>
-        <ColorPageCloseButton isTopButton={true} color="pink" />
+        <ColorPageCloseButton
+          onClickFC={gotoHome}
+          isTopButton={true}
+          color="pink"
+        />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         {umashibaData.map((data, index) => (
@@ -20,7 +31,11 @@ const UMASHIBAPage = () => {
             {data.content}
           </UMASHIBAPageCard>
         ))}
-        <ColorPageCloseButton isTopButton={false} color="pink" />
+        <ColorPageCloseButton
+          onClickFC={gotoHome}
+          isTopButton={false}
+          color="pink"
+        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );

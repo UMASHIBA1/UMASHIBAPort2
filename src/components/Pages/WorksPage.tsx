@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 import ClearTimeTablePhoto from "../../statics/ClearTimeTable.png";
 import custvaryPhoto from "../../statics/custvary.png";
 import UMASHIBAPort1photo from "../../statics/UMASHIBAPort1.png";
@@ -10,11 +11,21 @@ import ColorPageSpace from "../Template/ColorPage/ColorPageSpace";
 import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const WorksPage = () => {
+  const history = useHistory();
+
+  const gotoHome = () => {
+    history.push("/");
+  };
+
   return (
     <ColorPageSpace color="blue">
       <ColorPageTopSpace>
         <ColorPageTitle titleColor="blue">Works</ColorPageTitle>
-        <ColorPageCloseButton isTopButton={true} color="blue" />
+        <ColorPageCloseButton
+          onClickFC={gotoHome}
+          isTopButton={true}
+          color="blue"
+        />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         <WorksPageCard
@@ -38,7 +49,11 @@ const WorksPage = () => {
           photoalt="クリア時間割写真"
           url="https://www.custvary.com/"
         />
-        <ColorPageCloseButton isTopButton={false} color="blue" />
+        <ColorPageCloseButton
+          onClickFC={gotoHome}
+          isTopButton={false}
+          color="blue"
+        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );
