@@ -12,6 +12,14 @@ body,
     font-size: 16px;
 }
 
+.link {
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline $white-color solid;
+    }
+}
 
 .page-box {
     width: 100%;
