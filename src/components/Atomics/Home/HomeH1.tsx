@@ -4,7 +4,6 @@ import "../../../css/Home/HomeH1.scss";
 interface Props {
   children: string;
   className?: string;
-  onMouseOverFC?: () => void;
 }
 
 const HomeH1: React.FC<Props> = (props: Props) => {
