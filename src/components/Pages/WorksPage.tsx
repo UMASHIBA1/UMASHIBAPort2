@@ -1,8 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router";
-import ClearTimeTablePhoto from "../../statics/ClearTimeTable.png";
-import custvaryPhoto from "../../statics/custvary.png";
-import UMASHIBAPort1photo from "../../statics/UMASHIBAPort1.png";
+import worksData from "../../datas/worksData";
 import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
 import ColorPageTitle from "../Atomics/ColorPage/ColorPageTitle";
 import WorksPageCard from "../Organisms/ColorPage/Works/WorksPageCard";
@@ -28,27 +26,9 @@ const WorksPage = () => {
         />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
-        <WorksPageCard
-          title="CustVary"
-          description="様々なウェブページに対してコメントや補足紹介などができるサービス。ちなみにこれが初めて作ったウェブサービス。"
-          photo={custvaryPhoto}
-          photoalt="CustVaryロゴ"
-          url="https://www.custvary.com/"
-        />
-        <WorksPageCard
-          title="UMASHIBA Port 1"
-          description="UMASHIBA Portの最初のバージョン。折り紙をイメージして作成しました！"
-          photo={UMASHIBAPort1photo}
-          photoalt="UMASHIBA Port1写真"
-          url="https://www.custvary.com/"
-        />
-        <WorksPageCard
-          title="クリア時間割"
-          description="AndroidとPC(Web)両方に対応したクラウド同期型の時間割アプリ"
-          photo={ClearTimeTablePhoto}
-          photoalt="クリア時間割写真"
-          url="https://www.custvary.com/"
-        />
+        {worksData.map(data => (
+          <WorksPageCard key={data.title} {...data} />
+        ))}
         <ColorPageCloseButton
           onClickFC={gotoHome}
           isTopButton={false}
