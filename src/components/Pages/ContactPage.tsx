@@ -26,13 +26,8 @@ const ContactPage = () => {
         />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
-        {contactData.map((data, index) => (
-          <ContactPageCard
-            key={index}
-            title={data.title}
-            content={data.content}
-            url={data.url}
-          />
+        {contactData.map(data => (
+          <ContactPageCard key={data.title} {...data} />
         ))}
         <ColorPageCloseButton
           onClickFC={gotoHome}

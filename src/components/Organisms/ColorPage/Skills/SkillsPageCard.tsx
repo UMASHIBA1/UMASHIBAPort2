@@ -17,8 +17,8 @@ const SkillsPageCard: React.FC<Props> = (props: Props) => {
         <ColorPageCardTitle>{props.title}</ColorPageCardTitle>
         <div className="skills-page-card-description">{props.description}</div>
         <div className="skills-page-card-tags">
-          {props.tags.map((tagName, index) => (
-            <ColorPageTag key={index} color={"orange"}>
+          {props.tags.map(tagName => (
+            <ColorPageTag key={tagName} color={"orange"}>
               {tagName}
             </ColorPageTag>
           ))}

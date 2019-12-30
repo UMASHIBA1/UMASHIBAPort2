@@ -26,13 +26,8 @@ const SkillsPage = () => {
         />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
-        {skillsData.map(({ title, description, tags }, index) => (
-          <SkillsPageCard
-            key={index}
-            title={title}
-            description={description}
-            tags={tags}
-          />
+        {skillsData.map(data => (
+          <SkillsPageCard key={data.title} {...data} />
         ))}
         <ColorPageCloseButton
           onClickFC={gotoHome}

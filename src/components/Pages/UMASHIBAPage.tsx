@@ -26,8 +26,8 @@ const UMASHIBAPage = () => {
         />
       </ColorPageTopSpace>
       <ColorPageContentSpace>
-        {umashibaData.map((data, index) => (
-          <UMASHIBAPageCard key={index} title={data.title}>
+        {umashibaData.map(data => (
+          <UMASHIBAPageCard key={data.title} title={data.title}>
             {data.content}
           </UMASHIBAPageCard>
         ))}
