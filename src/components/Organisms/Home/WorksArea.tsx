@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { useHistory } from "react-router";
 import "../../../css/Home/WorksArea.scss";
 import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
@@ -10,6 +11,7 @@ import HomeH1 from "../../Atomics/Home/HomeH1";
 const WorksArea: React.FC = () => {
   const focusedArea = useTypedSelector(state => state.homeState.focusedArea);
   const dispatch: DispatchType = useDispatch();
+  const history = useHistory();
 
   let shadowClassName = "";
   if (focusedArea === "umashibaPort") {
@@ -22,26 +24,21 @@ const WorksArea: React.FC = () => {
     dispatch({ type: CHANGE_FOCUSED_AREA, payload: "works" });
   };
 
+  const gotoWorksPage = () => {
+    history.push("/works");
+  };
+
   return (
-    <React.Fragment>
-      <div id="works-area" className="home-area home-area-cursor">
-        <div
-          onMouseOver={floatThis}
-          className={`${shadowClassName} home-area-cursor`}
-        />
-        <HomeH1
-          onMouseOverFC={floatThis}
-          className="works-home-h1 home-area-cursor"
-        >
-          Works
-        </HomeH1>
-        <object
-          onMouseOver={floatThis}
-          type="image/svg+xml"
-          data={blue_design}
-        />
-      </div>
-    </React.Fragment>
+    <div
+      onClick={gotoWorksPage}
+      onMouseOver={floatThis}
+      id="works-area"
+      className="home-area home-area-cursor"
+    >
+      <div className={`${shadowClassName} home-area-cursor`} />
+      <HomeH1 className="works-home-h1 home-area-cursor">Works</HomeH1>
+      <img src={blue_design} />
+    </div>
   );
 };
 
