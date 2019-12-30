@@ -5,6 +5,7 @@ import { ColorNames } from "../../../typing/colors";
 interface Props {
   color: ColorNames;
   isTopButton: boolean;
+  onClickFC: () => void;
 }
 
 const ColorPageCloseButton: React.FC<Props> = (props: Props) => {
@@ -28,6 +29,7 @@ const ColorPageCloseButton: React.FC<Props> = (props: Props) => {
 
   return (
     <div
+      onClick={props.onClickFC}
       onMouseOver={setIsHoveredToTrue}
       onMouseOut={setIsHoveredToFalse}
       className={`${classNameAboutColor} ${classNameAboutLocation}`}
