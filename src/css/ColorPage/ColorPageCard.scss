@@ -3,9 +3,14 @@
 .color-page-card {
     box-shadow: 5px 5px;
     border-radius: 16px;
-    width: 360px;
+    width: 90vw;
+    max-width: 380px;
     margin: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $sm-breakpoint) {
+        width: 380px;
+    }
 }
