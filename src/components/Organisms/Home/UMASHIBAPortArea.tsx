@@ -30,7 +30,7 @@ const UMASHIBAPortArea: React.FC = () => {
       <HomeH1 className="umashiba-port-home-h1 home-area-cursor">
         UMASHIBA Port
       </HomeH1>
-      <img src={pink_design} />
+      <img alt="UMASHIBA Portエリア背景" src={pink_design} />
     </div>
   );
 };

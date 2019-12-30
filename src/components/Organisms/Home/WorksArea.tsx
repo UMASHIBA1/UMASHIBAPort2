@@ -37,7 +37,7 @@ const WorksArea: React.FC = () => {
     >
       <div className={`${shadowClassName} home-area-cursor`} />
       <HomeH1 className="works-home-h1 home-area-cursor">Works</HomeH1>
-      <img src={blue_design} />
+      <img alt="Worksエリア背景" src={blue_design} />
     </div>
   );
 };

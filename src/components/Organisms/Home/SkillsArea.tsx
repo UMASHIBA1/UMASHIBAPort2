@@ -37,7 +37,7 @@ const SkillsArea: React.FC = () => {
     >
       <div className={shadowClassName} />
       <HomeH1 className="skills-home-h1 home-area-cursor">Skills</HomeH1>
-      <img src={orange_design} />
+      <img alt="Skillsエリア背景" src={orange_design} />
     </div>
   );
 };

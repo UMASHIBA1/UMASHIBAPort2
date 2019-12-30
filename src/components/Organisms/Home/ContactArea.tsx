@@ -37,7 +37,7 @@ const ContactArea: React.FC = () => {
     >
       <div className={shadowClassName} />
       <HomeH1 className="contact-home-h1 home-area-cursor">Contact</HomeH1>
-      <img src={green_design} />
+      <img alt="Contactエリア背景" src={green_design} />
     </div>
   );
 };
