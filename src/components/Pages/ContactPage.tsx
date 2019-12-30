@@ -34,6 +34,11 @@ const ContactPage = () => {
             url={data.url}
           />
         ))}
+        <ColorPageCloseButton
+          onClickFC={gotoHome}
+          isTopButton={false}
+          color="green"
+        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );
