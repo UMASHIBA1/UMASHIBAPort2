@@ -1,0 +1,15 @@
+@import '../../constants.scss';
+
+.contact-page-card {
+    padding: 10px;
+    width: 400px;
+
+    &>div {
+        &:last-child {
+            color: $white-color;
+            padding: 10px 0 10px 20px;
+            white-space: pre-line;
+        }
+    }
+
+}
