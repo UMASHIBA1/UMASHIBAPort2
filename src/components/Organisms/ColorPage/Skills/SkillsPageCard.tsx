@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 import "../../../../css/ColorPage/Skills/SkillsPageCard.scss";
 import ColorPageCard from "../../../Atomics/ColorPage/ColorPageCard";
 import ColorPageCardTitle from "../../../Atomics/ColorPage/ColorPageCardTitle";
@@ -11,6 +12,12 @@ interface Props {
 }
 
 const SkillsPageCard: React.FC<Props> = (props: Props) => {
+  const history = useHistory();
+
+  const gotoSkillTagPage = (tag: string) => {
+    history.push(`skillstag/${tag}`);
+  };
+
   return (
     <ColorPageCard color="orange">
       <div className="skills-page-card">
@@ -18,7 +25,12 @@ const SkillsPageCard: React.FC<Props> = (props: Props) => {
         <div className="skills-page-card-description">{props.description}</div>
         <div className="skills-page-card-tags">
           {props.tags.map(tagName => (
-            <ColorPageTag key={tagName} color={"orange"}>
+            <ColorPageTag
+              // tslint:disable-next-line: jsx-no-lambda
+              onClickFC={() => gotoSkillTagPage(tagName)}
+              key={tagName}
+              color={"orange"}
+            >
               {tagName}
             </ColorPageTag>
           ))}
