@@ -15,7 +15,7 @@ const SkillsPageCard: React.FC<Props> = (props: Props) => {
   const history = useHistory();
 
   const gotoSkillTagPage = (tag: string) => {
-    history.push(`skillstag/${tag}`);
+    history.push(`/skillstag/${tag}`);
   };
 
   return (
