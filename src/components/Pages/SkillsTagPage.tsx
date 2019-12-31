@@ -34,6 +34,11 @@ const SkillsTagPage: React.FC = () => {
           .map(data => (
             <SkillsPageCard key={data.title} {...data} />
           ))}
+        <ColorPageCloseButton
+          onClickFC={gotoSkillsPage}
+          isTopButton={false}
+          color="orange"
+        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );
