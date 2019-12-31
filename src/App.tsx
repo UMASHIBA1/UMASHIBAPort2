@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ContactPage from "./components/Pages/ContactPage";
 import Home from "./components/Pages/Home";
 import SkillsPage from "./components/Pages/SkillsPage";
+import SkillsTagPage from "./components/Pages/SkillsTagPage";
 import UMASHIBAPage from "./components/Pages/UMASHIBAPage";
 import WorksPage from "./components/Pages/WorksPage";
 import "./css/base.scss";
@@ -25,6 +26,9 @@ const App: React.FC = () => {
           </Route>
           <Route path="/contact">
             <ContactPage />
+          </Route>
+          <Route path="/skillstag/:tagName">
+            <SkillsTagPage />
           </Route>
           <Route path="/">
             <Home />
