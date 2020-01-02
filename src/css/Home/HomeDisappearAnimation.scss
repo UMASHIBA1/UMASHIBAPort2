@@ -124,7 +124,7 @@
             animation: UMASHIBAPortToWhiteScreen 200ms forwards 500ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
         }
 
-        &.white-background {
+        &:last-child {
             position: absolute;
             top: 0;
             left: 0;

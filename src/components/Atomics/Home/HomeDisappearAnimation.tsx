@@ -24,17 +24,17 @@ const HomeDisappearAnimation: React.FC<Props> = (props: Props) => {
       {/* hide animation */}
       {props.isStartAnimation && isShowHideAnimation ? (
         <div className="umashiba-port-area-animation umashiba-port-area-hide-animation">
-          <div className={`light-${props.color}-background`} />
+          <div className={`accent-${props.color}-background`} />
           <div className={`${props.color}-background`} />
           <div className={`deep-${props.color}-background`} />
           <div className={`accent-${props.color}-background`} />
           <div className={`${props.color}-background`} />
-          <div className={`light-${props.color}-background`} />
+          <div className={`deep-${props.color}-background`} />
           <div className={`accent-${props.color}-background`} />
           <div className={`deep-${props.color}-background`} />
           <div className={`${props.color}-background`} />
           <div
-            className={`light-${props.color}-background`}
+            className={`accent-${props.color}-background`}
             onAnimationEnd={startToWhiteAnimation}
           />
         </div>
@@ -42,17 +42,17 @@ const HomeDisappearAnimation: React.FC<Props> = (props: Props) => {
       {/* to white animation */}
       {isStartToWhiteAnimation ? (
         <div className="umashiba-port-area-animation umashiba-port-area-to-white-screen-animation">
-          <div className={`light-${props.color}-background`} />
+          <div className={`accent-${props.color}-background`} />
           <div className={`${props.color}-background`} />
           <div className={`deep-${props.color}-background`} />
           <div className={`accent-${props.color}-background`} />
           <div className={`${props.color}-background`} />
-          <div className={`light-${props.color}-background`} />
+          <div className={`deep-${props.color}-background`} />
           <div className={`accent-${props.color}-background`} />
           <div className={`deep-${props.color}-background`} />
           <div className={`${props.color}-background`} />
           <div
-            className={`light-${props.color}-background`}
+            className={`accent-${props.color}-background`}
             onAnimationEnd={props.animationEndFC}
           />
           <div className="white-background" />
