@@ -32,7 +32,6 @@
     font-size: 20px;
     font-weight: bold;
     background-color: $white-color;
-    transform: scale(0.05, 0.05);
 
     @media (min-width: $sm-breakpoint) {
         font-size: 24px;
@@ -51,9 +50,11 @@
 }
 
 .expand-color-page-title {
+    transform: scale(0.05, 0.05);
     animation: colorPageTitleExpandTitle 500ms forwards;
 }
 
 .minimum-color-page-title {
-    animation: colorPageTitleMinimumTitle 500ms forwards;
+    transform: scale(1, 1);
+    animation: colorPageTitleMinimumTitle 500ms forwards 300ms;
 }
