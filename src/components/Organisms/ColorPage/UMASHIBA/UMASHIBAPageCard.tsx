@@ -15,7 +15,7 @@ const UMASHIBAPageCard: React.FC<Props> = (props: Props) => {
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
-      onAnimationEndFC={props.onAnimationEndFC}
+      onDisappearFC={props.onAnimationEndFC}
       color="pink"
     >
       <div className="umashiba-page-card">

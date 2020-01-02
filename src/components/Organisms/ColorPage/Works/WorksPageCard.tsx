@@ -17,7 +17,7 @@ const WorksPageCard: React.FC<Props> = (props: Props) => {
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
-      onAnimationEndFC={props.onAnimationEndFC}
+      onDisappearFC={props.onAnimationEndFC}
       color="blue"
     >
       <div className="works-page-card">

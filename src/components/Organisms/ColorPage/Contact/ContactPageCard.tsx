@@ -19,7 +19,7 @@ const ContactPageCard: React.FC<Props> = (props: Props) => {
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
-      onAnimationEndFC={props.onAnimationEndFC}
+      onDisappearFC={props.onAnimationEndFC}
       color="green"
     >
       <div className="contact-page-card">

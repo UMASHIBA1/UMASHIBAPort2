@@ -6,14 +6,14 @@ interface Props {
   children: ReactNode;
   color: ColorNames;
   willCollapse: boolean;
-  onAnimationEndFC?: () => void;
+  onDisappearFC?: () => void;
 }
 
 const ColorPageCard: React.FC<Props> = (props: Props) => {
   if (props.willCollapse) {
     return (
       <div
-        onAnimationEnd={props.onAnimationEndFC}
+        onAnimationEnd={props.onDisappearFC}
         className={`color-page-card-minimum color-page-card deep-${props.color} accent-${props.color}-background`}
       >
         {props.children}
@@ -22,7 +22,6 @@ const ColorPageCard: React.FC<Props> = (props: Props) => {
   } else {
     return (
       <div
-        onAnimationEnd={props.onAnimationEndFC}
         className={`color-page-card-expand color-page-card deep-${props.color} accent-${props.color}-background`}
       >
         {props.children}
