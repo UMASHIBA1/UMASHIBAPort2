@@ -7,11 +7,17 @@ import UMASHIBAPageCardContent from "../../../Atomics/ColorPage/UMASHIBA/UMASHIB
 interface Props {
   title: string;
   children: string;
+  willCollapse: boolean;
+  onAnimationEndFC?: () => void;
 }
 
 const UMASHIBAPageCard: React.FC<Props> = (props: Props) => {
   return (
-    <ColorPageCard color="pink">
+    <ColorPageCard
+      willCollapse={props.willCollapse}
+      onAnimationEndFC={props.onAnimationEndFC}
+      color="pink"
+    >
       <div className="umashiba-page-card">
         <ColorPageCardTitle>{props.title}</ColorPageCardTitle>
         <div className="umashiba-page-card-content-container">

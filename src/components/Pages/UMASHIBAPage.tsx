@@ -34,7 +34,11 @@ const UMASHIBAPage = () => {
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         {umashibaData.map(data => (
-          <UMASHIBAPageCard key={data.title} title={data.title}>
+          <UMASHIBAPageCard
+            willCollapse={willClosePage}
+            key={data.title}
+            title={data.title}
+          >
             {data.content}
           </UMASHIBAPageCard>
         ))}

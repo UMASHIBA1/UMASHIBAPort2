@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory, useParams } from "react-router";
 import skillsData from "../../datas/skillsData";
 import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
@@ -11,6 +11,11 @@ import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 const SkillsTagPage: React.FC = () => {
   const history = useHistory();
   const { tagName = "" } = useParams();
+  const [willClosePage, changeWillClosePage] = useState(false);
+
+  const changeWillclosePageToTrue = () => {
+    changeWillClosePage(true);
+  };
 
   const gotoSkillsPage = () => {
     history.push("/skills");
@@ -32,7 +37,11 @@ const SkillsTagPage: React.FC = () => {
             return data.tags.some(tag => tag === tagName);
           })
           .map(data => (
-            <SkillsPageCard key={data.title} {...data} />
+            <SkillsPageCard
+              willCollapse={willClosePage}
+              key={data.title}
+              {...data}
+            />
           ))}
         <ColorPageCloseButton
           onClickFC={gotoSkillsPage}

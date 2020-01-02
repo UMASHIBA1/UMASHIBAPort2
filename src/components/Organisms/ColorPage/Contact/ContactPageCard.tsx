@@ -7,6 +7,8 @@ interface Props {
   title: string;
   content: string;
   url?: string;
+  willCollapse: boolean;
+  onAnimationEndFC?: () => void;
 }
 
 const ContactPageCard: React.FC<Props> = (props: Props) => {
@@ -15,7 +17,11 @@ const ContactPageCard: React.FC<Props> = (props: Props) => {
   };
 
   return (
-    <ColorPageCard color="green">
+    <ColorPageCard
+      willCollapse={props.willCollapse}
+      onAnimationEndFC={props.onAnimationEndFC}
+      color="green"
+    >
       <div className="contact-page-card">
         <ColorPageCardTitle>{props.title}</ColorPageCardTitle>
         {props.url ? (

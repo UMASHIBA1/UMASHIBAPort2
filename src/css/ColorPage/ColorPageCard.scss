@@ -1,6 +1,6 @@
 @import '../constants.scss';
 
-@keyframes colorPageCardDisplayCard {
+@keyframes colorPageCardExpandCard {
     from {
         opacity: 0;
         transform: scale(0.05, 0.05);
@@ -9,6 +9,18 @@
     to {
         opacity: 1;
         transform: scale(1, 1);
+    }
+}
+
+@keyframes colorPageCardMinimumCard {
+    from {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0, 0);
     }
 }
 
@@ -21,11 +33,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transform: scale(0.05, 0.05);
-    animation: colorPageCardDisplayCard 500ms forwards 200ms;
+
 
     @media (min-width: $sm-breakpoint) {
         width: 380px;
     }
+}
+
+.color-page-card-expand {
+    opacity: 0;
+    transform: scale(0.05, 0.05);
+    animation: colorPageCardExpandCard 500ms forwards 200ms;
+}
+
+.color-page-card-minimum {
+    opacity: 1;
+    transform: scale(1, 1);
+    animation: colorPageCardMinimumCard 500ms forwards 200ms;
 }

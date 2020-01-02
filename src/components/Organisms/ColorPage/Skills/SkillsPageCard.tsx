@@ -9,6 +9,8 @@ interface Props {
   title: string;
   description: string;
   tags: string[];
+  willCollapse: boolean;
+  onAnimationEndFC?: () => void;
 }
 
 const SkillsPageCard: React.FC<Props> = (props: Props) => {
@@ -19,7 +21,11 @@ const SkillsPageCard: React.FC<Props> = (props: Props) => {
   };
 
   return (
-    <ColorPageCard color="orange">
+    <ColorPageCard
+      willCollapse={props.willCollapse}
+      onAnimationEndFC={props.onAnimationEndFC}
+      color="orange"
+    >
       <div className="skills-page-card">
         <ColorPageCardTitle>{props.title}</ColorPageCardTitle>
         <div className="skills-page-card-description">{props.description}</div>

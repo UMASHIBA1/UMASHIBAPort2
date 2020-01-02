@@ -34,7 +34,11 @@ const SkillsPage = () => {
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         {skillsData.map(data => (
-          <SkillsPageCard key={data.title} {...data} />
+          <SkillsPageCard
+            willCollapse={willClosePage}
+            key={data.title}
+            {...data}
+          />
         ))}
         <ColorPageCloseButton
           onClickFC={changeWillclosePageToTrue}

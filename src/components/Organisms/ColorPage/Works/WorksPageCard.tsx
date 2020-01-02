@@ -9,11 +9,17 @@ interface Props {
   description: string;
   title: string;
   url: string;
+  willCollapse: boolean;
+  onAnimationEndFC?: () => void;
 }
 
 const WorksPageCard: React.FC<Props> = (props: Props) => {
   return (
-    <ColorPageCard color="blue">
+    <ColorPageCard
+      willCollapse={props.willCollapse}
+      onAnimationEndFC={props.onAnimationEndFC}
+      color="blue"
+    >
       <div className="works-page-card">
         <div className="works-page-card-photo-area">
           <img src={props.photo} alt={props.photoalt} />

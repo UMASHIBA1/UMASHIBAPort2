@@ -34,7 +34,11 @@ const ContactPage = () => {
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         {contactData.map(data => (
-          <ContactPageCard key={data.title} {...data} />
+          <ContactPageCard
+            willCollapse={willClosePage}
+            key={data.title}
+            {...data}
+          />
         ))}
         <ColorPageCloseButton
           onClickFC={changeWillclosePageToTrue}

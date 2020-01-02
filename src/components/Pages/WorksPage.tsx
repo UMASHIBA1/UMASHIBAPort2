@@ -34,7 +34,11 @@ const WorksPage = () => {
       </ColorPageTopSpace>
       <ColorPageContentSpace>
         {worksData.map(data => (
-          <WorksPageCard key={data.title} {...data} />
+          <WorksPageCard
+            willCollapse={willClosePage}
+            key={data.title}
+            {...data}
+          />
         ))}
         <ColorPageCloseButton
           onClickFC={changeWillclosePageToTrue}
