@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router";
 import skillsData from "../../datas/skillsData";
 import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
@@ -10,6 +10,11 @@ import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const SkillsPage = () => {
   const history = useHistory();
+  const [willClosePage, changeWillClosePage] = useState(false);
+
+  const changeWillclosePageToTrue = () => {
+    changeWillClosePage(true);
+  };
 
   const gotoHome = () => {
     history.push("/");
@@ -18,9 +23,11 @@ const SkillsPage = () => {
   return (
     <ColorPageSpace color="orange">
       <ColorPageTopSpace>
-        <ColorPageTitle titleColor="orange">Skills</ColorPageTitle>
+        <ColorPageTitle willCollapse={willClosePage} titleColor="orange">
+          Skills
+        </ColorPageTitle>
         <ColorPageCloseButton
-          onClickFC={gotoHome}
+          onClickFC={changeWillclosePageToTrue}
           isTopButton={true}
           color="orange"
         />
@@ -30,7 +37,7 @@ const SkillsPage = () => {
           <SkillsPageCard key={data.title} {...data} />
         ))}
         <ColorPageCloseButton
-          onClickFC={gotoHome}
+          onClickFC={changeWillclosePageToTrue}
           isTopButton={false}
           color="orange"
         />

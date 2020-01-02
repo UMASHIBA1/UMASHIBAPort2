@@ -7,7 +7,17 @@
     }
 
     to {
-        transform: scale((1, 1));
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes colorPageTitleMinimumTitle {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(0, 0);
     }
 }
 
@@ -23,7 +33,6 @@
     font-weight: bold;
     background-color: $white-color;
     transform: scale(0.05, 0.05);
-    animation: colorPageTitleExpandTitle 500ms forwards;
 
     @media (min-width: $sm-breakpoint) {
         font-size: 24px;
@@ -39,4 +48,12 @@
             margin-bottom: 3px;
         }
     }
+}
+
+.expand-color-page-title {
+    animation: colorPageTitleExpandTitle 500ms forwards;
+}
+
+.minimum-color-page-title {
+    animation: colorPageTitleMinimumTitle 500ms forwards;
 }

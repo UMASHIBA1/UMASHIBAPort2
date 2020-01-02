@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router";
 import contactData from "../../datas/contactData";
 import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
@@ -10,6 +10,11 @@ import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const ContactPage = () => {
   const history = useHistory();
+  const [willClosePage, changeWillClosePage] = useState(false);
+
+  const changeWillclosePageToTrue = () => {
+    changeWillClosePage(true);
+  };
 
   const gotoHome = () => {
     history.push("/");
@@ -18,9 +23,11 @@ const ContactPage = () => {
   return (
     <ColorPageSpace color="green">
       <ColorPageTopSpace>
-        <ColorPageTitle titleColor="green">Contact</ColorPageTitle>
+        <ColorPageTitle willCollapse={willClosePage} titleColor="green">
+          Contact
+        </ColorPageTitle>
         <ColorPageCloseButton
-          onClickFC={gotoHome}
+          onClickFC={changeWillclosePageToTrue}
           isTopButton={true}
           color="green"
         />
@@ -30,7 +37,7 @@ const ContactPage = () => {
           <ContactPageCard key={data.title} {...data} />
         ))}
         <ColorPageCloseButton
-          onClickFC={gotoHome}
+          onClickFC={changeWillclosePageToTrue}
           isTopButton={false}
           color="green"
         />
