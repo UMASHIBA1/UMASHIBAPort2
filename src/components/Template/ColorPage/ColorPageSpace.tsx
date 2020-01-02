@@ -25,6 +25,12 @@ const ColorPageSpace: React.FC<Props> = (props: Props) => {
           <div className={`${props.color}-background`} />
           <div className={`${props.color}-background`} />
           <div className={`${props.color}-background`} />
+          <div className={`${props.color}-background`} />
+          <div className={`${props.color}-background`} />
+          <div className={`${props.color}-background`} />
+          <div className={`${props.color}-background`} />
+          <div className={`${props.color}-background`} />
+          <div className={`${props.color}-background`} />
           <div
             className={`${props.color}-background`}
             onAnimationEnd={showContent}
