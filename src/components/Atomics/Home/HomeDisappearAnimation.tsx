@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../../css/Home/HomeDisappearAnimation.scss";
 import { ColorNames } from "../../../typing/colors";
 
 interface Props {
