@@ -1,5 +1,15 @@
 @import '../constants.scss';
 
+@keyframes colorPageCloseButtonTopToBottom {
+    from {
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 .color-page-top-close-button {
     width: 80px;
     height: 40px;
@@ -9,6 +19,8 @@
     align-items: center;
     font-size: 14px;
     cursor: pointer;
+    transform: translateY(-100px);
+    animation: colorPageCloseButtonTopToBottom 500ms forwards 600ms;
 
     @media (min-width: $sm-breakpoint) {
         width: 100px;
