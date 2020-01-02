@@ -26,6 +26,7 @@ const SkillsTagPage: React.FC = () => {
       <ColorPageTopSpace>
         <TagPageTitle color="orange">{tagName}</TagPageTitle>
         <ColorPageCloseButton
+          willCollapse={willClosePage}
           onClickFC={gotoSkillsPage}
           isTopButton={true}
           color="orange"
@@ -44,6 +45,7 @@ const SkillsTagPage: React.FC = () => {
             />
           ))}
         <ColorPageCloseButton
+          willCollapse={willClosePage}
           onClickFC={gotoSkillsPage}
           isTopButton={false}
           color="orange"

@@ -10,6 +10,16 @@
     }
 }
 
+@keyframes colorPageCloseButtonBottomToTop {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
 .color-page-top-close-button {
     width: 80px;
     height: 40px;
@@ -19,8 +29,6 @@
     align-items: center;
     font-size: 14px;
     cursor: pointer;
-    transform: translateY(-100px);
-    animation: colorPageCloseButtonTopToBottom 500ms forwards 600ms;
 
     @media (min-width: $sm-breakpoint) {
         width: 100px;
@@ -31,6 +39,16 @@
     span {
         margin-bottom: 3px;
     }
+}
+
+.color-page-top-close-button-show {
+    transform: translateY(-100px);
+    animation: colorPageCloseButtonTopToBottom 500ms forwards 600ms;
+}
+
+.color-page-top-close-button-hide {
+    transform: translateY(0);
+    animation: colorPageCloseButtonBottomToTop 500ms forwards 600ms;
 }
 
 .color-page-bottom-close-button {

@@ -27,6 +27,7 @@ const SkillsPage = () => {
           Skills
         </ColorPageTitle>
         <ColorPageCloseButton
+          willCollapse={willClosePage}
           onClickFC={changeWillclosePageToTrue}
           isTopButton={true}
           color="orange"
@@ -41,6 +42,7 @@ const SkillsPage = () => {
           />
         ))}
         <ColorPageCloseButton
+          willCollapse={willClosePage}
           onClickFC={changeWillclosePageToTrue}
           isTopButton={false}
           color="orange"

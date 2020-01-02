@@ -27,6 +27,7 @@ const ContactPage = () => {
           Contact
         </ColorPageTitle>
         <ColorPageCloseButton
+          willCollapse={willClosePage}
           onClickFC={changeWillclosePageToTrue}
           isTopButton={true}
           color="green"
@@ -41,6 +42,7 @@ const ContactPage = () => {
           />
         ))}
         <ColorPageCloseButton
+          willCollapse={willClosePage}
           onClickFC={changeWillclosePageToTrue}
           isTopButton={false}
           color="green"

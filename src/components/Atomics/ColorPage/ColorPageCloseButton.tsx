@@ -6,6 +6,8 @@ interface Props {
   color: ColorNames;
   isTopButton: boolean;
   onClickFC: () => void;
+  willCollapse: boolean;
+  onAnimationEndFC?: () => void;
 }
 
 const ColorPageCloseButton: React.FC<Props> = (props: Props) => {
@@ -26,17 +28,29 @@ const ColorPageCloseButton: React.FC<Props> = (props: Props) => {
   const classNameAboutLocation = props.isTopButton
     ? "color-page-top-close-button"
     : "color-page-bottom-close-button";
-
-  return (
-    <div
-      onClick={props.onClickFC}
-      onMouseOver={setIsHoveredToTrue}
-      onMouseOut={setIsHoveredToFalse}
-      className={`${classNameAboutColor} ${classNameAboutLocation}`}
-    >
-      <span>とじる</span>
-    </div>
-  );
+  if (props.willCollapse) {
+    return (
+      <div
+        onClick={props.onClickFC}
+        onMouseOver={setIsHoveredToTrue}
+        onMouseOut={setIsHoveredToFalse}
+        className={`${classNameAboutColor} ${classNameAboutLocation} color-page-top-close-button-hide`}
+      >
+        <span>とじる</span>
+      </div>
+    );
+  } else {
+    return (
+      <div
+        onClick={props.onClickFC}
+        onMouseOver={setIsHoveredToTrue}
+        onMouseOut={setIsHoveredToFalse}
+        className={`${classNameAboutColor} ${classNameAboutLocation} color-page-top-close-button-show`}
+      >
+        <span>とじる</span>
+      </div>
+    );
+  }
 };
 
 export default ColorPageCloseButton;
