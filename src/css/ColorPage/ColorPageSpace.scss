@@ -1,5 +1,19 @@
 @import '../constants.scss';
 
+@keyframes expandHeight {
+    to {
+        height: 100%;
+    }
+}
+
+.color-page-display-flex {
+    display: flex;
+}
+
+.color-page-display-none {
+    display: none;
+}
+
 .color-page-space {
     width: 100%;
     height: 100%;
@@ -8,4 +22,39 @@
     align-items: center;
     justify-content: center;
     overflow: auto;
+    animation: showPage 100ms forwards 2000ms;
+}
+
+.color-page-space-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+
+    div {
+        width: 25%;
+        height: 0%;
+
+        &:nth-child(1) {
+            animation: expandHeight 700ms forwards 500ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        }
+
+        &:nth-child(2) {
+            animation: expandHeight 700ms forwards 400ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        }
+
+        &:nth-child(3) {
+            animation: expandHeight 700ms forwards 500ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        }
+
+        &:nth-child(4) {
+            animation: expandHeight 700ms forwards 600ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        }
+
+    }
 }
