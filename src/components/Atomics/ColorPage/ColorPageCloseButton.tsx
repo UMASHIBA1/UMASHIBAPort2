@@ -4,7 +4,6 @@ import { ColorNames } from "../../../typing/colors";
 
 interface Props {
   color: ColorNames;
-  isTopButton: boolean;
   onClickFC: () => void;
   willCollapse: boolean;
   onAnimationEndFC?: () => void;
@@ -25,16 +24,13 @@ const ColorPageCloseButton: React.FC<Props> = (props: Props) => {
     ? `white-background deep-${props.color}`
     : `deep-${props.color}-background white`;
 
-  const classNameAboutLocation = props.isTopButton
-    ? "color-page-top-close-button"
-    : "color-page-bottom-close-button";
   if (props.willCollapse) {
     return (
       <div
         onClick={props.onClickFC}
         onMouseOver={setIsHoveredToTrue}
         onMouseOut={setIsHoveredToFalse}
-        className={`${classNameAboutColor} ${classNameAboutLocation} color-page-top-close-button-hide`}
+        className={`${classNameAboutColor} color-page-close-button color-page-close-button-hide`}
       >
         <span>とじる</span>
       </div>
@@ -45,7 +41,7 @@ const ColorPageCloseButton: React.FC<Props> = (props: Props) => {
         onClick={props.onClickFC}
         onMouseOver={setIsHoveredToTrue}
         onMouseOut={setIsHoveredToFalse}
-        className={`${classNameAboutColor} ${classNameAboutLocation} color-page-top-close-button-show`}
+        className={`${classNameAboutColor} color-page-close-button color-page-close-button-show`}
       >
         <span>とじる</span>
       </div>

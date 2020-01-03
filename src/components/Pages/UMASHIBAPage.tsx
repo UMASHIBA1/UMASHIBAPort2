@@ -38,7 +38,6 @@ const UMASHIBAPage = () => {
         <ColorPageCloseButton
           willCollapse={willCloseContent}
           onClickFC={changeWillCloseContentToTrue}
-          isTopButton={true}
           color="pink"
         />
       </ColorPageTopSpace>
@@ -53,12 +52,6 @@ const UMASHIBAPage = () => {
             {data.content}
           </UMASHIBAPageCard>
         ))}
-        <ColorPageCloseButton
-          willCollapse={willCloseContent}
-          onClickFC={changeWillCloseContentToTrue}
-          isTopButton={false}
-          color="pink"
-        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );

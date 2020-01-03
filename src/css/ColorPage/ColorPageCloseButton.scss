@@ -20,7 +20,7 @@
     }
 }
 
-.color-page-top-close-button {
+.color-page-close-button {
     width: 80px;
     height: 40px;
     border-radius: 20px;
@@ -41,12 +41,12 @@
     }
 }
 
-.color-page-top-close-button-show {
+.color-page-close-button-show {
     transform: translateY(-100px);
     animation: colorPageCloseButtonTopToBottom 500ms forwards 600ms;
 }
 
-.color-page-top-close-button-hide {
+.color-page-close-button-hide {
     transform: translateY(0);
     animation: colorPageCloseButtonBottomToTop 500ms forwards;
 }

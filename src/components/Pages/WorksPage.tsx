@@ -38,7 +38,6 @@ const WorksPage = () => {
         <ColorPageCloseButton
           willCollapse={willCloseContent}
           onClickFC={changeWillCloseContentToTrue}
-          isTopButton={true}
           color="blue"
         />
       </ColorPageTopSpace>
@@ -51,12 +50,6 @@ const WorksPage = () => {
             {...data}
           />
         ))}
-        <ColorPageCloseButton
-          willCollapse={willCloseContent}
-          onClickFC={changeWillCloseContentToTrue}
-          isTopButton={false}
-          color="blue"
-        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );

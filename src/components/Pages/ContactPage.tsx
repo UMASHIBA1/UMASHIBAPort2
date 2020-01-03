@@ -38,7 +38,6 @@ const ContactPage = () => {
         <ColorPageCloseButton
           willCollapse={willCloseContent}
           onClickFC={changeWillCloseContentToTrue}
-          isTopButton={true}
           color="green"
         />
       </ColorPageTopSpace>
@@ -51,12 +50,6 @@ const ContactPage = () => {
             {...data}
           />
         ))}
-        <ColorPageCloseButton
-          willCollapse={willCloseContent}
-          onClickFC={changeWillCloseContentToTrue}
-          isTopButton={false}
-          color="green"
-        />
       </ColorPageContentSpace>
     </ColorPageSpace>
   );
