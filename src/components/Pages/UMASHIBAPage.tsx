@@ -10,9 +10,14 @@ import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const UMASHIBAPage = () => {
   const history = useHistory();
+  const [willCloseContent, changeWillCloseContent] = useState(false);
   const [willClosePage, changeWillClosePage] = useState(false);
 
-  const changeWillclosePageToTrue = () => {
+  const changeWillCloseContentToTrue = () => {
+    changeWillCloseContent(true);
+  };
+
+  const changeWillClosePageToTrue = () => {
     changeWillClosePage(true);
   };
 
@@ -21,14 +26,18 @@ const UMASHIBAPage = () => {
   };
 
   return (
-    <ColorPageSpace color="pink">
+    <ColorPageSpace
+      onClosePageFC={gotoHome}
+      isDisappearPage={willClosePage}
+      color="pink"
+    >
       <ColorPageTopSpace>
-        <ColorPageTitle willCollapse={willClosePage} titleColor="pink">
+        <ColorPageTitle willCollapse={willCloseContent} titleColor="pink">
           UMASHIBA
         </ColorPageTitle>
         <ColorPageCloseButton
-          willCollapse={willClosePage}
-          onClickFC={changeWillclosePageToTrue}
+          willCollapse={willCloseContent}
+          onClickFC={changeWillCloseContentToTrue}
           isTopButton={true}
           color="pink"
         />
@@ -36,7 +45,8 @@ const UMASHIBAPage = () => {
       <ColorPageContentSpace>
         {umashibaData.map(data => (
           <UMASHIBAPageCard
-            willCollapse={willClosePage}
+            onAnimationEndFC={changeWillClosePageToTrue}
+            willCollapse={willCloseContent}
             key={data.title}
             title={data.title}
           >
@@ -44,8 +54,8 @@ const UMASHIBAPage = () => {
           </UMASHIBAPageCard>
         ))}
         <ColorPageCloseButton
-          willCollapse={willClosePage}
-          onClickFC={changeWillclosePageToTrue}
+          willCollapse={willCloseContent}
+          onClickFC={changeWillCloseContentToTrue}
           isTopButton={false}
           color="pink"
         />

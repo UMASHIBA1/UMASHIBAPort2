@@ -11,9 +11,14 @@ import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 const SkillsTagPage: React.FC = () => {
   const history = useHistory();
   const { tagName = "" } = useParams();
+  const [willCloseContent, changeWillCloseContent] = useState(false);
   const [willClosePage, changeWillClosePage] = useState(false);
 
-  const changeWillclosePageToTrue = () => {
+  const changeWillcloseContentToTrue = () => {
+    changeWillCloseContent(true);
+  };
+
+  const changeWillClosePageToTrue = () => {
     changeWillClosePage(true);
   };
 
@@ -22,11 +27,15 @@ const SkillsTagPage: React.FC = () => {
   };
 
   return (
-    <ColorPageSpace color="orange">
+    <ColorPageSpace
+      onClosePageFC={gotoSkillsPage}
+      isDisappearPage={willClosePage}
+      color="orange"
+    >
       <ColorPageTopSpace>
         <TagPageTitle color="orange">{tagName}</TagPageTitle>
         <ColorPageCloseButton
-          willCollapse={willClosePage}
+          willCollapse={willCloseContent}
           onClickFC={gotoSkillsPage}
           isTopButton={true}
           color="orange"
@@ -39,13 +48,13 @@ const SkillsTagPage: React.FC = () => {
           })
           .map(data => (
             <SkillsPageCard
-              willCollapse={willClosePage}
+              willCollapse={willCloseContent}
               key={data.title}
               {...data}
             />
           ))}
         <ColorPageCloseButton
-          willCollapse={willClosePage}
+          willCollapse={willCloseContent}
           onClickFC={gotoSkillsPage}
           isTopButton={false}
           color="orange"

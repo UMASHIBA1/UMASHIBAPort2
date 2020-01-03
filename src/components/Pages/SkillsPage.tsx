@@ -10,9 +10,14 @@ import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const SkillsPage = () => {
   const history = useHistory();
+  const [willCloseContent, changeWillCloseContent] = useState(false);
   const [willClosePage, changeWillClosePage] = useState(false);
 
-  const changeWillclosePageToTrue = () => {
+  const changeWillCloseContentToTrue = () => {
+    changeWillCloseContent(true);
+  };
+
+  const changeWillClosePageToTrue = () => {
     changeWillClosePage(true);
   };
 
@@ -21,14 +26,18 @@ const SkillsPage = () => {
   };
 
   return (
-    <ColorPageSpace color="orange">
+    <ColorPageSpace
+      onClosePageFC={gotoHome}
+      isDisappearPage={willClosePage}
+      color="orange"
+    >
       <ColorPageTopSpace>
-        <ColorPageTitle willCollapse={willClosePage} titleColor="orange">
+        <ColorPageTitle willCollapse={willCloseContent} titleColor="orange">
           Skills
         </ColorPageTitle>
         <ColorPageCloseButton
-          willCollapse={willClosePage}
-          onClickFC={changeWillclosePageToTrue}
+          willCollapse={willCloseContent}
+          onClickFC={changeWillCloseContentToTrue}
           isTopButton={true}
           color="orange"
         />
@@ -36,14 +45,15 @@ const SkillsPage = () => {
       <ColorPageContentSpace>
         {skillsData.map(data => (
           <SkillsPageCard
-            willCollapse={willClosePage}
+            willCollapse={willCloseContent}
+            onAnimationEndFC={changeWillClosePageToTrue}
             key={data.title}
             {...data}
           />
         ))}
         <ColorPageCloseButton
-          willCollapse={willClosePage}
-          onClickFC={changeWillclosePageToTrue}
+          willCollapse={willCloseContent}
+          onClickFC={changeWillCloseContentToTrue}
           isTopButton={false}
           color="orange"
         />
