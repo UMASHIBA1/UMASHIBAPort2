@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import homeStateStore from "./homeState";
+import homeStateStore from "./homeStateStore";
 import skillsPageStore from "./skillsPageStore";
 
 const rootReducer = combineReducers({
