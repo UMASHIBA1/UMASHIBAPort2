@@ -1,5 +1,6 @@
 import React from "react";
 import "../../css/Home/Home.scss";
+import HomeAppearAnimation from "../Atomics/Home/HomeAppearAnimation";
 import ContactArea from "../Organisms/Home/ContactArea";
 import SkillsArea from "../Organisms/Home/SkillsArea";
 import UMASHIBAPortArea from "../Organisms/Home/UMASHIBAPortArea";
@@ -8,7 +9,8 @@ import ColorfulBackground from "../Template/Home/ColofulBackGround";
 
 const Home: React.FC = () => {
   return (
-    <div className="page-box white background">
+    <div className="page-box white-background">
+      <HomeAppearAnimation />
       <ColorfulBackground>
         <UMASHIBAPortArea />
         <WorksArea />

@@ -1,0 +1,139 @@
+@import '../constants.scss';
+
+$homeAppearAnimationStartDelayTime: 400ms;
+$homeAppearAnimationDurationTime: 400ms;
+$homeAppearAnimationFunction: cubic-bezier(0.97, 0.54, 0.81, 0.57);
+
+@keyframes homeAppearAnimationOpenLeftCover {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes homeAppearAnimationOpenRightCover {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.home-appear-animation {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 100%;
+            transform: translateX(0);
+        }
+
+        &:nth-child(1) {
+            z-index: 205;
+
+            &:before,
+            &:after {
+                background-color: $white-color
+            }
+
+            &:before {
+                animation: homeAppearAnimationOpenLeftCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime $homeAppearAnimationFunction;
+            }
+
+            &:after {
+                animation: homeAppearAnimationOpenRightCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime $homeAppearAnimationFunction;
+            }
+        }
+
+        &:nth-child(2) {
+            z-index: 204;
+
+            &:before,
+            &:after {
+                background-color: $accent-pink;
+            }
+
+            &:before {
+                animation: homeAppearAnimationOpenLeftCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 200 $homeAppearAnimationFunction;
+            }
+
+            &:after {
+                animation: homeAppearAnimationOpenRightCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 200 $homeAppearAnimationFunction;
+            }
+        }
+
+        &:nth-child(3) {
+            z-index: 203;
+
+            &:before,
+            &:after {
+                background-color: $accent-blue;
+            }
+
+            &:before {
+                animation: homeAppearAnimationOpenLeftCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 400 $homeAppearAnimationFunction;
+            }
+
+            &:after {
+                animation: homeAppearAnimationOpenRightCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 400 $homeAppearAnimationFunction;
+            }
+        }
+
+        &:nth-child(4) {
+            z-index: 202;
+
+            &:before,
+            &:after {
+                background-color: $accent-orange;
+            }
+
+            &:before {
+                animation: homeAppearAnimationOpenLeftCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 600 $homeAppearAnimationFunction;
+            }
+
+            &:after {
+                animation: homeAppearAnimationOpenRightCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 600 $homeAppearAnimationFunction;
+            }
+        }
+
+        &:nth-child(5) {
+            z-index: 201;
+
+            &:before,
+            &:after {
+                background-color: $accent-green;
+            }
+
+            &:before {
+                animation: homeAppearAnimationOpenLeftCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 800 $homeAppearAnimationFunction;
+            }
+
+            &:after {
+                animation: homeAppearAnimationOpenRightCover $homeAppearAnimationDurationTime forwards $homeAppearAnimationStartDelayTime + 800 $homeAppearAnimationFunction;
+            }
+        }
+    }
+}
