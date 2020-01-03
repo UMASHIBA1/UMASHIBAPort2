@@ -1,0 +1,1 @@
+export const CHANGE_CLICKED_TAG = "CHANGE_CLICKED_TAG";
