@@ -8,7 +8,7 @@ interface Props {
   content: string;
   url?: string;
   willCollapse: boolean;
-  onAnimationEndFC?: () => void;
+  onDisappearFC?: () => void;
 }
 
 const ContactPageCard: React.FC<Props> = (props: Props) => {
@@ -19,7 +19,7 @@ const ContactPageCard: React.FC<Props> = (props: Props) => {
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
-      onDisappearFC={props.onAnimationEndFC}
+      onDisappearFC={props.onDisappearFC}
       color="green"
     >
       <div className="contact-page-card">

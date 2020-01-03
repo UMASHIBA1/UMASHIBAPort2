@@ -8,14 +8,14 @@ interface Props {
   title: string;
   children: string;
   willCollapse: boolean;
-  onAnimationEndFC?: () => void;
+  onDisappearFC?: () => void;
 }
 
 const UMASHIBAPageCard: React.FC<Props> = (props: Props) => {
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
-      onDisappearFC={props.onAnimationEndFC}
+      onDisappearFC={props.onDisappearFC}
       color="pink"
     >
       <div className="umashiba-page-card">

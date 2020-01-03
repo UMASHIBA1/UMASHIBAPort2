@@ -10,7 +10,7 @@ interface Props {
   description: string;
   tags: string[];
   willCollapse: boolean;
-  onAnimationEndFC?: () => void;
+  onDisappearFC?: () => void;
 }
 
 const SkillsPageCard: React.FC<Props> = (props: Props) => {
@@ -23,7 +23,7 @@ const SkillsPageCard: React.FC<Props> = (props: Props) => {
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
-      onDisappearFC={props.onAnimationEndFC}
+      onDisappearFC={props.onDisappearFC}
       color="orange"
     >
       <div className="skills-page-card">

@@ -45,7 +45,7 @@ const ContactPage = () => {
         {contactData.map(data => (
           <ContactPageCard
             willCollapse={willCloseContent}
-            onAnimationEndFC={changeWillClosePageToTrue}
+            onDisappearFC={changeWillClosePageToTrue}
             key={data.title}
             {...data}
           />

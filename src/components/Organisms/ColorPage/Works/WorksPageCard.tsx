@@ -10,14 +10,14 @@ interface Props {
   title: string;
   url: string;
   willCollapse: boolean;
-  onAnimationEndFC?: () => void;
+  onDisappearFC?: () => void;
 }
 
 const WorksPageCard: React.FC<Props> = (props: Props) => {
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
-      onDisappearFC={props.onAnimationEndFC}
+      onDisappearFC={props.onDisappearFC}
       color="blue"
     >
       <div className="works-page-card">

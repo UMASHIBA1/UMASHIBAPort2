@@ -45,7 +45,7 @@ const SkillsPage = () => {
         {skillsData.map(data => (
           <SkillsPageCard
             willCollapse={willCloseContent}
-            onAnimationEndFC={changeWillClosePageToTrue}
+            onDisappearFC={changeWillClosePageToTrue}
             key={data.title}
             {...data}
           />

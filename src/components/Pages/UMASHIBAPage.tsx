@@ -44,7 +44,7 @@ const UMASHIBAPage = () => {
       <ColorPageContentSpace>
         {umashibaData.map(data => (
           <UMASHIBAPageCard
-            onAnimationEndFC={changeWillClosePageToTrue}
+            onDisappearFC={changeWillClosePageToTrue}
             willCollapse={willCloseContent}
             key={data.title}
             title={data.title}

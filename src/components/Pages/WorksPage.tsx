@@ -45,7 +45,7 @@ const WorksPage = () => {
         {worksData.map(data => (
           <WorksPageCard
             willCollapse={willCloseContent}
-            onAnimationEndFC={changeWillClosePageToTrue}
+            onDisappearFC={changeWillClosePageToTrue}
             key={data.title}
             {...data}
           />
