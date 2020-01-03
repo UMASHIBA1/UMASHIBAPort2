@@ -54,7 +54,7 @@
             display: flex;
             width: 100%;
             height: 100%;
-            animation: colorPageSpaceMinimumWidth 400ms forwards 200ms
+            animation: colorPageSpaceMinimumWidth 400ms forwards 100ms
         }
 
         &:nth-child(2) {
@@ -62,7 +62,7 @@
             display: flex;
             width: 100%;
             height: 100%;
-            animation: colorPageSpaceMinimumWidth 400ms forwards 400ms
+            animation: colorPageSpaceMinimumWidth 400ms forwards 300ms
         }
 
         &:nth-child(3) {
@@ -70,7 +70,7 @@
             display: flex;
             width: 100%;
             height: 100%;
-            animation: colorPageSpaceMinimumWidth 400ms forwards 600ms
+            animation: colorPageSpaceMinimumWidth 400ms forwards 500ms
         }
     }
 }
