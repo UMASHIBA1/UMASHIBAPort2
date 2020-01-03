@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useHistory, useParams } from "react-router";
 import skillsData from "../../datas/skillsData";
+import { CHANGE_CLICKED_TAG } from "../../redux/constants/skillsPageTypes";
+import { DispatchType } from "../../redux/store";
 import ColorPageCloseButton from "../Atomics/ColorPage/ColorPageCloseButton";
 import TagPageTitle from "../Atomics/ColorPage/TagPageTitle";
 import SkillsPageCard from "../Organisms/ColorPage/Skills/SkillsPageCard";
@@ -13,6 +16,8 @@ const SkillsTagPage: React.FC = () => {
   const { tagName = "" } = useParams();
   const [willCloseContent, changeWillCloseContent] = useState(false);
   const [willClosePage, changeWillClosePage] = useState(false);
+  const dispatch: DispatchType = useDispatch();
+  const flagForInitialize = "initialize";
 
   const changeWillcloseContentToTrue = () => {
     changeWillCloseContent(true);
@@ -25,6 +30,10 @@ const SkillsTagPage: React.FC = () => {
   const gotoSkillsPage = () => {
     history.push("/skills");
   };
+
+  useEffect(() => {
+    dispatch({ type: CHANGE_CLICKED_TAG, payload: "" });
+  }, [flagForInitialize]);
 
   return (
     <ColorPageSpace

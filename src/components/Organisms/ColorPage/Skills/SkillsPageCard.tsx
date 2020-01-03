@@ -1,6 +1,8 @@
 import React from "react";
-import { useHistory } from "react-router";
+import { useDispatch } from "react-redux";
 import "../../../../css/ColorPage/Skills/SkillsPageCard.scss";
+import { CHANGE_CLICKED_TAG } from "../../../../redux/constants/skillsPageTypes";
+import { DispatchType } from "../../../../redux/store";
 import ColorPageCard from "../../../Atomics/ColorPage/ColorPageCard";
 import ColorPageCardTitle from "../../../Atomics/ColorPage/ColorPageCardTitle";
 import ColorPageTag from "../../../Atomics/ColorPage/ColorPageTag";
@@ -14,10 +16,10 @@ interface Props {
 }
 
 const SkillsPageCard: React.FC<Props> = (props: Props) => {
-  const history = useHistory();
+  const dispatch: DispatchType = useDispatch();
 
-  const gotoSkillTagPage = (tag: string) => {
-    history.push(`/skillstag/${tag}`);
+  const setTagNameToStore = (tagName: string) => {
+    dispatch({ type: CHANGE_CLICKED_TAG, payload: tagName });
   };
 
   return (
@@ -33,7 +35,7 @@ const SkillsPageCard: React.FC<Props> = (props: Props) => {
           {props.tags.map(tagName => (
             <ColorPageTag
               // tslint:disable-next-line: jsx-no-lambda
-              onClickFC={() => gotoSkillTagPage(tagName)}
+              onClickFC={() => setTagNameToStore(tagName)}
               key={tagName}
               color={"orange"}
             >
