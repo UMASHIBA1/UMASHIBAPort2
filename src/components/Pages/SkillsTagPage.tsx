@@ -79,7 +79,9 @@ const SkillsTagPage: React.FC = () => {
     return (
       <ColorPageSpace color="orange">
         <ColorPageTopSpace>
-          <TagPageTitle color="orange">{tagName}</TagPageTitle>
+          <TagPageTitle willCollapse={willCloseContent} color="orange">
+            {tagName}
+          </TagPageTitle>
           <ColorPageCloseButton
             willCollapse={willCloseContent}
             onClickFC={changeWillcloseContentToTrue}
