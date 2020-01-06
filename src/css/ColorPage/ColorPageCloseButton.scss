@@ -29,6 +29,7 @@
     align-items: center;
     font-size: 14px;
     cursor: pointer;
+    transition: 0.2s;
 
     @media (min-width: $sm-breakpoint) {
         width: 100px;
@@ -49,27 +50,4 @@
 .color-page-close-button-hide {
     transform: translateY(0);
     animation: colorPageCloseButtonBottomToTop 500ms forwards;
-}
-
-.color-page-bottom-close-button {
-    width: 160px;
-    min-height: 46px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    cursor: pointer;
-    margin: 10px 0 20px 0;
-
-    @media (min-width: $sm-breakpoint) {
-        display: none;
-        width: 140px;
-        height: 60px;
-        border-radius: 30px;
-    }
-
-    span {
-        margin-bottom: 3px;
-    }
 }
