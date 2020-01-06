@@ -7,6 +7,8 @@ interface Props {
   color: ColorNames;
   willCollapse: boolean;
   onDisappearFC?: () => void;
+  isClickable?: boolean;
+  onClickFC?: () => void;
 }
 
 const ColorPageCard: React.FC<Props> = (props: Props) => {
@@ -22,7 +24,12 @@ const ColorPageCard: React.FC<Props> = (props: Props) => {
   } else {
     return (
       <div
-        className={`color-page-card-expand color-page-card deep-${props.color} accent-${props.color}-background`}
+        className={`color-page-card-expand color-page-card deep-${
+          props.color
+        } accent-${props.color}-background ${
+          props.isClickable ? "clickable-color-page-card" : null
+        }`}
+        onClick={props.onClickFC}
       >
         {props.children}
       </div>
