@@ -36,11 +36,7 @@ const SkillsTagPage: React.FC = () => {
   }, [flagForInitialize]);
 
   return (
-    <ColorPageSpace
-      onClosePageFC={gotoSkillsPage}
-      isDisappearPage={willClosePage}
-      color="orange"
-    >
+    <ColorPageSpace color="orange">
       <ColorPageTopSpace>
         <TagPageTitle color="orange">{tagName}</TagPageTitle>
         <ColorPageCloseButton
