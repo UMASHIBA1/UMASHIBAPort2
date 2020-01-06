@@ -14,11 +14,17 @@ interface Props {
 }
 
 const WorksPageCard: React.FC<Props> = (props: Props) => {
+  const openTargetLink = () => {
+    window.open(props.url);
+  };
+
   return (
     <ColorPageCard
       willCollapse={props.willCollapse}
       onDisappearFC={props.onDisappearFC}
       color="blue"
+      isClickable={true}
+      onClickFC={openTargetLink}
     >
       <div className="works-page-card">
         <div className="works-page-card-photo-area">
