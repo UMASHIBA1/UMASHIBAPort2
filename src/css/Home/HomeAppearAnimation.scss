@@ -1,7 +1,7 @@
 @import '../constants.scss';
 
-$homeAppearAnimationStartDelayTime: 400ms;
-$homeAppearAnimationDurationTime: 400ms;
+$homeAppearAnimationStartDelayTime: 100ms;
+$homeAppearAnimationDurationTime: 300ms;
 $homeAppearAnimationFunction: cubic-bezier(0.97, 0.54, 0.81, 0.57);
 
 @keyframes homeAppearAnimationOpenLeftCover {
