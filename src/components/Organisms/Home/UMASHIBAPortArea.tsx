@@ -5,6 +5,7 @@ import "../../../css/Home/UMASHIBAPortArea.scss";
 import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import pink_design from "../../../statics/pink_design.svg";
+import { useTypedSelector } from "../../../typing/redux/hooks";
 import HomeDisappearAnimation from "../../Atomics/Home/HomeDisappearAnimation";
 import HomeH1 from "../../Atomics/Home/HomeH1";
 
@@ -12,6 +13,9 @@ const UMASHIBAPortArea: React.FC = () => {
   const dispatch: DispatchType = useDispatch();
   const history = useHistory();
   const [isDisappearContent, changeIsDisappearContent] = useState(false);
+  const homeFirstArrived = useTypedSelector(
+    state => state.homeState.homeFirstArrived
+  );
 
   const floatThis = () => {
     dispatch({ type: CHANGE_FOCUSED_AREA, payload: "umashibaPort" });
@@ -34,7 +38,10 @@ const UMASHIBAPortArea: React.FC = () => {
         className="home-area home-area-cursor"
       >
         <div />
-        <HomeH1 className="umashiba-port-home-h1 home-area-cursor">
+        <HomeH1
+          isAnimate={homeFirstArrived}
+          className="umashiba-port-home-h1 home-area-cursor"
+        >
           UMASHIBA Port
         </HomeH1>
         <img alt="UMASHIBA Portエリア背景" src={pink_design} />

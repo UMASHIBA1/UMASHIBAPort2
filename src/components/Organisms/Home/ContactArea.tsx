@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import "../../../css/Home/ContactArea.scss";
-import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
+import {
+  CHANGE_FOCUSED_AREA,
+  CHANGE_HOME_FIRST_ARRIVED
+} from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import green_design from "../../../statics/green_design.svg";
 import { useTypedSelector } from "../../../typing/redux/hooks";
@@ -14,6 +17,9 @@ const ContactArea: React.FC = () => {
   const dispatch: DispatchType = useDispatch();
   const history = useHistory();
   const [isDisappearContent, changeIsDisappearContent] = useState(false);
+  const homeFirstArrived = useTypedSelector(
+    state => state.homeState.homeFirstArrived
+  );
 
   let shadowClassName = "";
   if (focusedArea === "skills") {
@@ -30,6 +36,10 @@ const ContactArea: React.FC = () => {
     changeIsDisappearContent(true);
   };
 
+  const homeArrivedFlagToTrue = () => {
+    dispatch({ type: CHANGE_HOME_FIRST_ARRIVED, payload: false });
+  };
+
   const gotoContactPage = () => {
     history.push("/contact");
   };
@@ -43,7 +53,13 @@ const ContactArea: React.FC = () => {
         className="home-area home-area-cursor"
       >
         <div className={shadowClassName} />
-        <HomeH1 className="contact-home-h1 home-area-cursor">Contact</HomeH1>
+        <HomeH1
+          isAnimate={homeFirstArrived}
+          onAnimationEndFC={homeArrivedFlagToTrue}
+          className="contact-home-h1 home-area-cursor"
+        >
+          Contact
+        </HomeH1>
         <img alt="Contactエリア背景" src={green_design} />
       </div>
       <HomeDisappearAnimation

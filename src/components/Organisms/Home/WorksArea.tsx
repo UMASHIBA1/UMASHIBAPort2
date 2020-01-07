@@ -14,6 +14,9 @@ const WorksArea: React.FC = () => {
   const dispatch: DispatchType = useDispatch();
   const history = useHistory();
   const [isDisappearContent, changeIsDisappearContent] = useState(false);
+  const homeFirstArrived = useTypedSelector(
+    state => state.homeState.homeFirstArrived
+  );
 
   let shadowClassName = "";
   if (focusedArea === "umashibaPort") {
@@ -43,7 +46,12 @@ const WorksArea: React.FC = () => {
         className="home-area home-area-cursor"
       >
         <div className={`${shadowClassName} home-area-cursor`} />
-        <HomeH1 className="works-home-h1 home-area-cursor">Works</HomeH1>
+        <HomeH1
+          isAnimate={homeFirstArrived}
+          className="works-home-h1 home-area-cursor"
+        >
+          Works
+        </HomeH1>
         <img alt="Worksエリア背景" src={blue_design} />
       </div>
       <HomeDisappearAnimation

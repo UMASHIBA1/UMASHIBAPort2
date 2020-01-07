@@ -14,6 +14,9 @@ const SkillsArea: React.FC = () => {
   const dispatch: DispatchType = useDispatch();
   const history = useHistory();
   const [isDisappearContent, changeIsDisappearContent] = useState(false);
+  const homeFirstArrived = useTypedSelector(
+    state => state.homeState.homeFirstArrived
+  );
 
   let shadowClassName = "";
   if (focusedArea === "works") {
@@ -43,7 +46,12 @@ const SkillsArea: React.FC = () => {
         className="home-area home-area-cursor"
       >
         <div className={shadowClassName} />
-        <HomeH1 className="skills-home-h1 home-area-cursor">Skills</HomeH1>
+        <HomeH1
+          isAnimate={homeFirstArrived}
+          className="skills-home-h1 home-area-cursor"
+        >
+          Skills
+        </HomeH1>
         <img alt="Skillsエリア背景" src={orange_design} />
       </div>
       <HomeDisappearAnimation

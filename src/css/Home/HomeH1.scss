@@ -45,7 +45,6 @@
             fill: #ffffff;
             opacity: 0;
         }
-
     }
 
     &:before {
@@ -64,4 +63,17 @@
         animation-fill-mode: forwards;
     }
 
+}
+
+.home-h1-container-no-animation {
+    overflow: hidden;
+
+    svg {
+        text:first-child {
+            fill: #ffffff;
+            stroke: #ffffff;
+            stroke-width: 1px;
+            stroke-dasharray: 1000;
+        }
+    }
 }
