@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../css/ColorPage/ColorPageDisappearAnimation.scss";
 import { ColorNames } from "../../../typing/colors";
 
 interface Props {

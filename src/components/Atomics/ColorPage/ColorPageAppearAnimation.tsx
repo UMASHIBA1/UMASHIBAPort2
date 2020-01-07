@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../css/ColorPage/ColorPageAppearAnimation.scss";
 import { ColorNames } from "../../../typing/colors";
 
 interface Props {
@@ -8,7 +9,7 @@ interface Props {
 
 const ColorPageAppearAnimation: React.FC<Props> = (props: Props) => {
   return (
-    <div className={`color-page-space-animation`}>
+    <div className={`color-page-appear-animation`}>
       <div className={`${props.color}-background`} />
       <div className={`${props.color}-background`} />
       <div className={`${props.color}-background`} />

@@ -1,0 +1,42 @@
+.color-page-disappear-animation {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &:nth-child(1) {
+            z-index: 103;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: colorPageSpaceMinimumWidth 400ms forwards 100ms
+        }
+
+        &:nth-child(2) {
+            z-index: 102;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: colorPageSpaceMinimumWidth 400ms forwards 300ms
+        }
+
+        &:nth-child(3) {
+            z-index: 101;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            animation: colorPageSpaceMinimumWidth 400ms forwards 500ms
+        }
+    }
+}
