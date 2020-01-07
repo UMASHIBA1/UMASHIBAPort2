@@ -6,3 +6,10 @@ export const changeFocusedArea = (
 ) => {
   return { ...state, ...{ focusedArea } };
 };
+
+export const changeHomeFirstArrived = (
+  homeFirstArrived: boolean,
+  state: HomeState
+) => {
+  return { ...state, ...{ homeFirstArrived } };
+};

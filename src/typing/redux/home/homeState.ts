@@ -7,4 +7,5 @@ export type FocusedAreaTypes =
 
 export interface HomeState {
   focusedArea: FocusedAreaTypes;
+  homeFirstArrived: boolean;
 }
