@@ -44,6 +44,11 @@ const ContactArea: React.FC = () => {
     history.push("/contact");
   };
 
+  const onDisappearFC = () => {
+    homeArrivedFlagToTrue();
+    gotoContactPage();
+  };
+
   return (
     <React.Fragment>
       <div
@@ -55,7 +60,6 @@ const ContactArea: React.FC = () => {
         <div className={shadowClassName} />
         <HomeH1
           isAnimate={homeFirstArrived}
-          onAnimationEndFC={homeArrivedFlagToTrue}
           className="contact-home-h1 home-area-cursor"
         >
           Contact
@@ -65,7 +69,7 @@ const ContactArea: React.FC = () => {
       <HomeDisappearAnimation
         color="green"
         isStartAnimation={isDisappearContent}
-        animationEndFC={gotoContactPage}
+        animationEndFC={onDisappearFC}
       />
     </React.Fragment>
   );

@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import "../../../css/Home/SkillsArea.scss";
-import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
+import {
+  CHANGE_FOCUSED_AREA,
+  CHANGE_HOME_FIRST_ARRIVED
+} from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import orange_design from "../../../statics/orange_design.svg";
 import { useTypedSelector } from "../../../typing/redux/hooks";
@@ -33,8 +36,17 @@ const SkillsArea: React.FC = () => {
     changeIsDisappearContent(true);
   };
 
+  const homeArrivedFlagToTrue = () => {
+    dispatch({ type: CHANGE_HOME_FIRST_ARRIVED, payload: false });
+  };
+
   const gotoSkillsPage = () => {
     history.push("/skills");
+  };
+
+  const onDisappearFC = () => {
+    homeArrivedFlagToTrue();
+    gotoSkillsPage();
   };
 
   return (
@@ -57,7 +69,7 @@ const SkillsArea: React.FC = () => {
       <HomeDisappearAnimation
         color="orange"
         isStartAnimation={isDisappearContent}
-        animationEndFC={gotoSkillsPage}
+        animationEndFC={onDisappearFC}
       />
     </React.Fragment>
   );

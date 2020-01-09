@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import "../../../css/Home/UMASHIBAPortArea.scss";
-import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
+import {
+  CHANGE_FOCUSED_AREA,
+  CHANGE_HOME_FIRST_ARRIVED
+} from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import pink_design from "../../../statics/pink_design.svg";
 import { useTypedSelector } from "../../../typing/redux/hooks";
@@ -25,8 +28,17 @@ const UMASHIBAPortArea: React.FC = () => {
     changeIsDisappearContent(true);
   };
 
+  const homeArrivedFlagToTrue = () => {
+    dispatch({ type: CHANGE_HOME_FIRST_ARRIVED, payload: false });
+  };
+
   const gotoUMASHIBAPage = () => {
     history.push("/umashiba");
+  };
+
+  const onDisappearFC = () => {
+    homeArrivedFlagToTrue();
+    gotoUMASHIBAPage();
   };
 
   return (
@@ -49,7 +61,7 @@ const UMASHIBAPortArea: React.FC = () => {
       <HomeDisappearAnimation
         color="pink"
         isStartAnimation={isDisappearContent}
-        animationEndFC={gotoUMASHIBAPage}
+        animationEndFC={onDisappearFC}
       />
     </React.Fragment>
   );

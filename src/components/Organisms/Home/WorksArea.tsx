@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import "../../../css/Home/WorksArea.scss";
-import { CHANGE_FOCUSED_AREA } from "../../../redux/constants/homeTypes";
+import {
+  CHANGE_FOCUSED_AREA,
+  CHANGE_HOME_FIRST_ARRIVED
+} from "../../../redux/constants/homeTypes";
 import { DispatchType } from "../../../redux/store";
 import blue_design from "../../../statics/blue_design.svg";
 import { useTypedSelector } from "../../../typing/redux/hooks";
@@ -33,8 +36,17 @@ const WorksArea: React.FC = () => {
     changeIsDisappearContent(true);
   };
 
+  const homeArrivedFlagToTrue = () => {
+    dispatch({ type: CHANGE_HOME_FIRST_ARRIVED, payload: false });
+  };
+
   const gotoWorksPage = () => {
     history.push("/works");
+  };
+
+  const onDisappearFC = () => {
+    homeArrivedFlagToTrue();
+    gotoWorksPage();
   };
 
   return (
@@ -57,7 +69,7 @@ const WorksArea: React.FC = () => {
       <HomeDisappearAnimation
         color="blue"
         isStartAnimation={isDisappearContent}
-        animationEndFC={gotoWorksPage}
+        animationEndFC={onDisappearFC}
       />
     </React.Fragment>
   );
