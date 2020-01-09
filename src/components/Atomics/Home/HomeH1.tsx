@@ -21,14 +21,14 @@ const HomeH1: React.FC<Props> = (props: Props) => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={`calc(6.5vw * ${titleLength * 0.6})`}
-          height={`calc(6.5vw*1.4)`}
+          height={`9.1vw`}
         >
-          <text x="0" y="calc(6.5vw*1.2)" fontSize="6.5vw">
+          <text x="0" y="85%" fontSize="6.5vw">
             {props.children}
           </text>
           <text
             x="0"
-            y="calc(6.5vw*1.2)"
+            y="85%"
             fontSize="6.5vw"
             onAnimationEnd={props.onAnimationEndFC}
           >
@@ -47,9 +47,9 @@ const HomeH1: React.FC<Props> = (props: Props) => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={`calc(6.5vw * ${titleLength * 0.6})`}
-          height={`calc(6.5vw*1.4)`}
+          height={`9.1vw`}
         >
-          <text x="0" y="calc(6.5vw*1.2)" fontSize="6.5vw">
+          <text x="0" y="85%" fontSize="6.5vw">
             {props.children}
           </text>
         </svg>
