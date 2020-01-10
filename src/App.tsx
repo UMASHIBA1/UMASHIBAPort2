@@ -30,7 +30,7 @@ const App: React.FC = () => {
           <Route path="/skillstag/:tagName">
             <SkillsTagPage />
           </Route>
-          <Route path="/">
+          <Route path="">
             <Home />
           </Route>
         </Switch>
