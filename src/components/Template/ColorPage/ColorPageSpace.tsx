@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode } from "react";
 import "../../../css/ColorPage/ColorPageSpace.scss";
 import { ColorNames } from "../../../typing/colors";
 
