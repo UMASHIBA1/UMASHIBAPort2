@@ -7,16 +7,16 @@ This is my portfolio site
 <img src="https://user-images.githubusercontent.com/49422601/72201524-5725f480-3498-11ea-8f1f-3f897459fed7.png" width="80%">  
 CSS アニメーションをがっつり使ってみたくて作成しました。
 
-## 使用した技術: Using technology
+## 使用した技術: Technology
 
 Typescript  
 React  
-firebase Hosting  
-  
+firebase hosting
+
 詳しくは package.json 見てください。  
 please see package.json for more detail
 
-## ライセンス License
+## ライセンス: License
 
 MIT
 
