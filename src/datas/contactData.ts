@@ -11,7 +11,7 @@ const contactData: ContactDataType[] = [
   },
   {
     title: "Twitter",
-    content: "@UMA_987",
+    content: "@UMASHIBA",
     url: "https://twitter.com/UMASHIBA"
   },
   {
