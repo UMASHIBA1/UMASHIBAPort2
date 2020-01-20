@@ -23,5 +23,5 @@ MIT
 ## 作った人: Auther
 
 - [GitHub](https://github.com/UMASHIBA1)
-- [Twitter](https://twitter.com/UMA_987)
+- [Twitter](https://twitter.com/UMASHIBA)
 - [Qlita](https://qiita.com/umashiba)
