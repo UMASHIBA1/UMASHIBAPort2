@@ -20,7 +20,7 @@ please see package.json for more detail
 
 MIT
 
-## 作った人: Auther
+## 作った人: Author
 
 - [GitHub](https://github.com/UMASHIBA1)
 - [Twitter](https://twitter.com/UMASHIBA)
