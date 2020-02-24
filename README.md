@@ -24,4 +24,4 @@ MIT
 
 - [GitHub](https://github.com/UMASHIBA1)
 - [Twitter](https://twitter.com/UMASHIBA)
-- [Qlita](https://qiita.com/umashiba)
+- [Qiita](https://qiita.com/umashiba)
