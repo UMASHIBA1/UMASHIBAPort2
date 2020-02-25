@@ -1,3 +1,4 @@
+import ThreeDRamenTimer from "../statics/3DRamenTimer.png";
 import ClearTimeTablePhoto from "../statics/ClearTimeTable.png";
 import custvaryPhoto from "../statics/custvary.png";
 import UMASHIBAPort1photo from "../statics/UMASHIBAPort1.png";
@@ -33,6 +34,14 @@ const worksData: WorksDataType[] = [
     photo: ClearTimeTablePhoto,
     photoalt: "クリア時間割写真",
     url: "https://cleartimetable.umashiba.dev/landing-page/"
+  },
+  {
+    title: "3Dラーメンタイマー",
+    description:
+      "Three.jsで作成したラーメンタイマーです。PWA対応なのでオフラインでも使えます！",
+    photo: ThreeDRamenTimer,
+    photoalt: "3Dラーメンタイマー写真",
+    url: "https://3d-ramen-timer.umashiba.dev/"
   }
 ];
 
