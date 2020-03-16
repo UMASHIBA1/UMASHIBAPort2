@@ -13,9 +13,9 @@ export interface WorksDataType {
 
 const worksData: WorksDataType[] = [
   {
-    title: "CustVary",
+    title: "CustVary[停止済み]",
     description:
-      "様々なウェブページに対してコメントや補足紹介などができるサービス。ちなみにこれが初めて作ったウェブサービス。",
+      "様々なウェブページに対してコメントや補足紹介などができるサービス。ちなみにこれが初めて作ったウェブサービス。※すでにサービスは停止しています。",
     photo: custvaryPhoto,
     photoalt: "CustVaryロゴ",
     url: "https://www.custvary.com/"

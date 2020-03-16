@@ -23,10 +23,16 @@ const skillsData: SkillsDataType[] = [
     tags: ["経験値:1年半", "プログラミング言語"]
   },
   {
-    title: "C言語",
+    title: "C",
     description:
       "学校で2019年4月から習い始めました。アルゴリズムやネットワークなどCS系の授業でアルゴリズムなどをC言語で書いています。\nポインタの理解が鬼門でした...。",
     tags: ["経験値:8ヶ月", "プログラミング言語"]
+  },
+  {
+    title: "Rust",
+    description:
+      "最近学んだ言語です。AtCoderを最近始めまして、その際にこの言語を使っています。これからもっと使いこなせるようになりたい言語です。所有権、ライフタイム当たりの概念が好きです。",
+    tags: ["経験値:3週間", "プログラミング言語"]
   },
   {
     title: "HTML5/CSS3",
@@ -45,6 +51,11 @@ const skillsData: SkillsDataType[] = [
     description:
       "クリア時間割というアプリのAndroid版を開発する際に使いました。Reactと同じ書き方でネイティブアプリ作れるのすごいですよね！",
     tags: ["経験値:1ヶ月", "フレームワーク", "ネイティブアプリ"]
+  },
+  {
+    title: "Three.js",
+    description: "3Dラーメンタイマーというアプリを作成する際に使用しました。",
+    tags: ["経験値:1ヶ月", "ライブラリ", "フロントエンド"]
   },
   {
     title: "Django",
@@ -80,6 +91,12 @@ const skillsData: SkillsDataType[] = [
     title: "GitLab",
     description: "学校での開発ではGitLabを使っています。",
     tags: ["経験値:3ヶ月", "ツール"]
+  },
+  {
+    title: "webpack",
+    description:
+      "最近使い始めました。今まで面倒くさくてcreate-react-appで済ませちゃってたんですがやっぱりある程度覚えるとカスタマイズできて便利です。3Dラーメンタイマー作る時に使いました。",
+    tags: ["経験値:1ヶ月", "ツール", "フロントエンド"]
   },
   {
     title: "VSCode",
