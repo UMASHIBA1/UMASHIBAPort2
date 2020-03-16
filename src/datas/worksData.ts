@@ -8,7 +8,7 @@ export interface WorksDataType {
   description: string;
   photo: string;
   photoalt: string;
-  url: string;
+  url?: string;
 }
 
 const worksData: WorksDataType[] = [
@@ -17,8 +17,7 @@ const worksData: WorksDataType[] = [
     description:
       "様々なウェブページに対してコメントや補足紹介などができるサービス。ちなみにこれが初めて作ったウェブサービス。※すでにサービスは停止しています。",
     photo: custvaryPhoto,
-    photoalt: "CustVaryロゴ",
-    url: "https://www.custvary.com/"
+    photoalt: "CustVaryロゴ"
   },
   {
     title: "UMASHIBA Port 1",

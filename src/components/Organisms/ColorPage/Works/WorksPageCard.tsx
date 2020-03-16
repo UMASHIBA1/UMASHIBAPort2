@@ -8,7 +8,7 @@ interface Props {
   photoalt: string;
   description: string;
   title: string;
-  url: string;
+  url?: string;
   willCollapse: boolean;
   onDisappearFC?: () => void;
 }
@@ -23,8 +23,8 @@ const WorksPageCard: React.FC<Props> = (props: Props) => {
       willCollapse={props.willCollapse}
       onDisappearFC={props.onDisappearFC}
       color="blue"
-      isClickable={true}
-      onClickFC={openTargetLink}
+      isClickable={props.url !== undefined}
+      onClickFC={props.url !== undefined ? openTargetLink : undefined}
     >
       <div className="works-page-card">
         <div className="works-page-card-photo-area">
