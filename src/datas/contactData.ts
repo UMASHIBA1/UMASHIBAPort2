@@ -7,23 +7,23 @@ export interface ContactDataType {
 const contactData: ContactDataType[] = [
   {
     title: "メールアドレス",
-    content: "umashiba1#gmail.com\n(#を@に変えてください)"
+    content: "umashiba1#gmail.com\n(#を@に変えてください)",
   },
   {
     title: "Twitter",
     content: "@UMASHIBA",
-    url: "https://twitter.com/UMASHIBA"
+    url: "https://twitter.com/UMASHIBA",
   },
   {
     title: "GitHub",
     content: "UMASHIBA1",
-    url: "https://github.com/UMASHIBA1"
+    url: "https://github.com/UMASHIBA1",
   },
   {
-    title: "Qlita",
+    title: "Qiita",
     content: "@umashiba",
-    url: "https://qiita.com/umashiba"
-  }
+    url: "https://qiita.com/umashiba",
+  },
 ];
 
 export default contactData;
