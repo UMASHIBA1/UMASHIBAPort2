@@ -2,6 +2,7 @@ import ThreeDRamenTimer from "../statics/3DRamenTimer.png";
 import ClearTimeTablePhoto from "../statics/ClearTimeTable.png";
 import custvaryPhoto from "../statics/custvary.png";
 import UMASHIBAPort1photo from "../statics/UMASHIBAPort1.png";
+import UMASHIBAVirtualDOM from "../statics/UMASHIBAVirtualDOM.png";
 
 export interface WorksDataType {
   title: string;
@@ -17,7 +18,7 @@ const worksData: WorksDataType[] = [
     description:
       "様々なウェブページに対してコメントや補足紹介などができるサービス。ちなみにこれが初めて作ったウェブサービス。※すでにサービスは停止しています。",
     photo: custvaryPhoto,
-    photoalt: "CustVaryロゴ"
+    photoalt: "CustVaryロゴ",
   },
   {
     title: "UMASHIBA Port 1",
@@ -25,14 +26,14 @@ const worksData: WorksDataType[] = [
       "UMASHIBA Portの最初のバージョン。折り紙をイメージして作成しました！",
     photo: UMASHIBAPort1photo,
     photoalt: "UMASHIBA Port1写真",
-    url: "https://portfolio.umashiba.dev"
+    url: "https://portfolio.umashiba.dev",
   },
   {
     title: "クリア時間割",
     description: "AndroidとPC(Web)両方に対応したクラウド同期型の時間割アプリ",
     photo: ClearTimeTablePhoto,
     photoalt: "クリア時間割写真",
-    url: "https://cleartimetable.umashiba.dev/landing-page/"
+    url: "https://cleartimetable.umashiba.dev/landing-page/",
   },
   {
     title: "3Dラーメンタイマー",
@@ -40,8 +41,16 @@ const worksData: WorksDataType[] = [
       "Three.jsで作成したラーメンタイマーです。PWA対応なのでオフラインでも使えます！",
     photo: ThreeDRamenTimer,
     photoalt: "3Dラーメンタイマー写真",
-    url: "https://3d-ramen-timer.umashiba.dev/"
-  }
+    url: "https://3d-ramen-timer.umashiba.dev/",
+  },
+  {
+    title: "UMASHIBAVirtualDOM",
+    description:
+      "勉強の為に仮想DOMを実装してみました。これを自作することで今まで使っていたReact等のフロントエンドフレームワークへの理解を深めることができました。",
+    photo: UMASHIBAVirtualDOM,
+    photoalt: "UMASHIBAVirtualDOM写真",
+    url: "https://github.com/UMASHIBA1/UMASHIBAVirtualDOM",
+  },
 ];
 
 export default worksData;
