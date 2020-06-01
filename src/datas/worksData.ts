@@ -3,6 +3,7 @@ import ClearTimeTablePhoto from "../statics/ClearTimeTable.png";
 import custvaryPhoto from "../statics/custvary.png";
 import UMASHIBAPort1photo from "../statics/UMASHIBAPort1.png";
 import UMASHIBAVirtualDOM from "../statics/UMASHIBAVirtualDOM.png";
+import UMASHIBAPort2Photo from "../statics/UMASHIBAPort2.png";
 
 export interface WorksDataType {
   title: string;
@@ -34,6 +35,13 @@ const worksData: WorksDataType[] = [
     photo: ClearTimeTablePhoto,
     photoalt: "クリア時間割写真",
     url: "https://cleartimetable.umashiba.dev/landing-page/",
+  },
+  {
+    title: "UMASHIBAPort2",
+    description: "このサイトです。CSSアニメーションを重視して作成しました。",
+    photo: UMASHIBAPort2Photo,
+    photoalt: "UMASHIBAPort2写真",
+    url: "https://umashiba.dev/"
   },
   {
     title: "3Dラーメンタイマー",
