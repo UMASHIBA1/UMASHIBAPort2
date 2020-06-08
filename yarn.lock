@@ -6193,7 +6193,7 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-firebase-tools@^8.4.2:
+firebase-tools@8.4.2:
   version "8.4.2"
   resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-8.4.2.tgz#19f27ceea878e075cb45dde083bd232d3b739916"
   integrity sha512-Kk3MKpM8+fZf1p+KzXBq1UDZxWBy+MWR6RFvj8L1xgoabsESMGbTgamJZfM1IWU3JJQFDH1fF8aPI5CvwXTr/A==
