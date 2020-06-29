@@ -1,62 +1,62 @@
-@import '../constants.scss';
+@import "../constants.scss";
 
 @keyframes colorPageCardExpandCard {
-    from {
-        opacity: 0;
-        transform: scale(0.05, 0.05);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.05, 0.05);
+  }
 
-    to {
-        opacity: 1;
-        transform: scale(1, 1);
-    }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 
 @keyframes colorPageCardMinimumCard {
-    from {
-        opacity: 1;
-        transform: scale(1, 1);
-    }
+  from {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 
-    to {
-        opacity: 0;
-        transform: scale(0, 0);
-    }
+  to {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
 }
 
 .color-page-card {
-    box-shadow: 5px 5px;
-    border-radius: 16px;
-    width: 90vw;
-    max-width: 380px;
-    margin: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-shadow: 5px 5px;
+  border-radius: 16px;
+  width: 90vw;
+  max-width: 380px;
+  height: auto;
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-    @media (min-width: $sm-breakpoint) {
-        width: 380px;
-    }
+  @media (min-width: $sm-breakpoint) {
+    width: 380px;
+  }
 }
 
 .clickable-color-page-card {
-    cursor: pointer;
-    transition: 0.4s;
+  cursor: pointer;
+  transition: 0.4s;
 
-    &:hover {
-        box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-    }
+  &:hover {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .color-page-card-expand {
-    opacity: 0;
-    transform: scale(0.05, 0.05);
-    animation: colorPageCardExpandCard 500ms forwards 200ms;
+  opacity: 0;
+  transform: scale(0.05, 0.05);
+  animation: colorPageCardExpandCard 500ms forwards 200ms;
 }
 
 .color-page-card-minimum {
-    opacity: 1;
-    transform: scale(1, 1);
-    animation: colorPageCardMinimumCard 500ms forwards 500ms;
+  opacity: 1;
+  transform: scale(1, 1);
+  animation: colorPageCardMinimumCard 500ms forwards 500ms;
 }
