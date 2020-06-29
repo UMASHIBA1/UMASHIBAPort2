@@ -1,13 +1,13 @@
 @import "../constants.scss";
 
 .color-page-content-space {
-  height: scroll;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  overflow: auto;
+  overflow: scroll;
 
   @media (min-width: $sm-breakpoint) {
     flex-direction: row;
