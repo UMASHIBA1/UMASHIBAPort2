@@ -6,7 +6,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "5.9.0",
     "@testing-library/react": "9.5.0",
-    "@testing-library/user-event": "11.3.2",
+    "@testing-library/user-event": "11.4.2",
     "@types/jest": "25.2.3",
     "@types/node": "12.12.47",
     "@types/react": "16.9.35",
