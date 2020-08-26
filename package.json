@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "firebase-tools": "8.5.0",
-    "prettier": "2.0.5",
+    "prettier": "2.1.1",
     "redux-devtools-extension": "2.13.8",
     "tslint": "5.20.1",
     "tslint-config-prettier": "1.18.0",
