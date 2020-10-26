@@ -5,6 +5,7 @@ import UMASHIBAPort1photo from "../statics/UMASHIBAPort1.png";
 import UMASHIBAVirtualDOM from "../statics/UMASHIBAVirtualDOM.png";
 import UMASHIBAPort2Photo from "../statics/UMASHIBAPort2.png";
 import GCAPhoto from "../statics/GCA.png";
+import INIADFesTeaserSitePhoto from "../statics/iniad-fes-teaser-site.png";
 
 export interface WorksDataType {
   title: string;
@@ -42,11 +43,12 @@ const worksData: WorksDataType[] = [
     description: "このサイトです。CSSアニメーションを重視して作成しました。",
     photo: UMASHIBAPort2Photo,
     photoalt: "UMASHIBAPort2写真",
-    url: "https://umashiba.dev/"
+    url: "https://umashiba.dev/",
   },
   {
     title: "GCA[非公開]",
-    description: "学校のチーム演習で作成したSlackアプリです。Slack上でGoogleカレンダーの閲覧、予定作成、削除、変更ができるようにしました。私は閲覧機能を担当しました。",
+    description:
+      "学校のチーム演習で作成したSlackアプリです。Slack上でGoogleカレンダーの閲覧、予定作成、削除、変更ができるようにしました。私は閲覧機能を担当しました。",
     photo: GCAPhoto,
     photoalt: "GCA写真",
   },
@@ -65,6 +67,14 @@ const worksData: WorksDataType[] = [
     photo: UMASHIBAVirtualDOM,
     photoalt: "UMASHIBAVirtualDOM写真",
     url: "https://github.com/UMASHIBA1/UMASHIBAVirtualDOM",
+  },
+  {
+    title: "INIAD-FES ティザーサイト2020",
+    description:
+      "私の通っている学部のオンライン学園祭のティザーサイトを作成させてもらいました。ニューモフィズムとCSSアニメーションを合わせた楽しいサイトになりました。",
+    photo: INIADFesTeaserSitePhoto,
+    photoalt: "INIAD-FES ティザーサイト写真",
+    url: "https://iniadfes.com/04coming/?no-redirect",
   },
 ];
 
