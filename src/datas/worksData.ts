@@ -6,6 +6,7 @@ import UMASHIBAVirtualDOM from "../statics/UMASHIBAVirtualDOM.png";
 import UMASHIBAPort2Photo from "../statics/UMASHIBAPort2.png";
 import GCAPhoto from "../statics/GCA.png";
 import INIADFesTeaserSitePhoto from "../statics/iniad-fes-teaser-site.png";
+import INIADFesVenueSitePhoto from "../statics/iniad-fes-venue.png";
 
 export interface WorksDataType {
   title: string;
@@ -76,6 +77,13 @@ const worksData: WorksDataType[] = [
     photoalt: "INIAD-FES ティザーサイト写真",
     url: "https://iniadfes.com/04coming/?no-redirect",
   },
+  {
+    title: "INIAD-FES 会場サイト",
+    description: "私の通っている学部のオンライン学園祭のバーチャルキャンパスを作成させてもらいました。",
+    photo: INIADFesVenueSitePhoto,
+    photoalt: "INIAD-FES 会場サイト",
+    url: "https://github.com/UMASHIBA1/iniad-fes-online-2020-venue"
+  }
 ];
 
 export default worksData;
