@@ -75,7 +75,7 @@ const worksData: WorksDataType[] = [
       "私の通っている学部のオンライン学園祭のティザーサイトを作成させてもらいました。ニューモフィズムとCSSアニメーションを合わせた楽しいサイトになりました。",
     photo: INIADFesTeaserSitePhoto,
     photoalt: "INIAD-FES ティザーサイト写真",
-    url: "https://iniadfes.com/04coming/?no-redirect",
+    url: "https://teaser-site2020.vercel.app/",
   },
   {
     title: "INIAD-FES 会場サイト",
