@@ -7,6 +7,8 @@ import UMASHIBAPort2Photo from "../statics/UMASHIBAPort2.png";
 import GCAPhoto from "../statics/GCA.png";
 import INIADFesTeaserSitePhoto from "../statics/iniad-fes-teaser-site.png";
 import INIADFesVenueSitePhoto from "../statics/iniad-fes-venue.png";
+import CSSAnimationInternshipPhoto from "../statics/cssAnimationInternship.png";
+
 
 export interface WorksDataType {
   title: string;
@@ -68,6 +70,13 @@ const worksData: WorksDataType[] = [
     photo: UMASHIBAVirtualDOM,
     photoalt: "UMASHIBAVirtualDOM写真",
     url: "https://github.com/UMASHIBA1/UMASHIBAVirtualDOM",
+  },
+  {
+    title: "CSSアニメーションインターンシップ最終成果物",
+    description: "pixivのCSSアニメーションインターンシップで作った最終成果物です。とてもきれいなウェブサイトに仕上がりました！",
+    photo: CSSAnimationInternshipPhoto,
+    photoalt: "CSS アニメーションインターンシップ最終成果物画像",
+    url: "https://css-animation-intern.netlify.app/"
   },
   {
     title: "INIAD-FES ティザーサイト2020",
