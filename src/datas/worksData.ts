@@ -8,6 +8,7 @@ import GCAPhoto from "../statics/GCA.png";
 import INIADFesTeaserSitePhoto from "../statics/iniad-fes-teaser-site.png";
 import INIADFesVenueSitePhoto from "../statics/iniad-fes-venue.png";
 import CSSAnimationInternshipPhoto from "../statics/cssAnimationInternship.png";
+import JobnicationPhoto from "../statics/jobnication.jpg";
 
 
 export interface WorksDataType {
@@ -92,6 +93,13 @@ const worksData: WorksDataType[] = [
     photo: INIADFesVenueSitePhoto,
     photoalt: "INIAD-FES 会場サイト",
     url: "https://github.com/UMASHIBA1/iniad-fes-online-2020-venue"
+  },
+  {
+    title: "jobnication",
+    description: "学校の演習で作ったアプリです。バックエンドを担当しました。",
+    photo: JobnicationPhoto,
+    photoalt: "jobnication 写真",
+    url: "https://jobnication.vercel.app/"
   }
 ];
 
