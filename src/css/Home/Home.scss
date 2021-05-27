@@ -1,3 +1,7 @@
 .background {
     z-index: 10;
 }
+
+a:focus {
+    border: 20px solid blue;
+}

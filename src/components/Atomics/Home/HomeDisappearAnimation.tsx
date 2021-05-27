@@ -8,7 +8,7 @@ interface Props {
   color: ColorNames;
 }
 
-const HomeDisappearAnimation: React.FC<Props> = (props: Props) => {
+const HomeDisappearAnimation: React.VFC<Props> = (props: Props) => {
   const [isStartToWhiteAnimation, changeIsStartToWhiteAnimation] = useState(
     false
   );
