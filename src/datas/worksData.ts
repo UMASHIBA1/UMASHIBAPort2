@@ -100,11 +100,10 @@ const worksData: WorksDataType[] = [
     description: "学校の演習で作ったアプリです。バックエンドを担当しました。",
     photo: JobnicationPhoto,
     photoalt: "jobnication 写真",
-    url: "https://jobnication.vercel.app/"
   },
   {
     title: "violet",
-    description: "Webフロントエンドへの理解を深めるために作ったシンプルなブラウザです。これを作成したことでブラウザのレンダリングについてあるていどしっかりと理解できました。",
+    description: "Webフロントエンドへの理解を深めるために作ったシンプルなブラウザです。これを作成したことでブラウザのレンダリングについてある程度しっかりと理解できました。",
     photo: VioletPhoto,
     photoalt: "violet　写真",
     url: "https://github.com/UMASHIBA1/violet"
