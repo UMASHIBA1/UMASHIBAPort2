@@ -121,6 +121,11 @@ const skillsData: SkillsDataType[] = [
     tags: ["経験値:2年", "ツール"],
   },
   {
+    title: "CLion",
+    description: "Rustでコード書くときにこのIDEを使ってます。",
+    tags: ["経験値:3ヶ月", "ツール"]
+  },
+  {
     title: "Adobe Illsutrator",
     description:
       "ロゴや画像などを作る時やウェブアプリのデザインなどをする際に使用します。このポートフォリオもIllustratorでデザインして作りました。",
