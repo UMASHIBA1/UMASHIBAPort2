@@ -9,6 +9,7 @@ import INIADFesTeaserSitePhoto from "../statics/iniad-fes-teaser-site.png";
 import INIADFesVenueSitePhoto from "../statics/iniad-fes-venue.png";
 import CSSAnimationInternshipPhoto from "../statics/cssAnimationInternship.png";
 import JobnicationPhoto from "../statics/jobnication.jpg";
+import VioletPhoto from "../statics/violet.png";
 
 
 export interface WorksDataType {
@@ -100,6 +101,13 @@ const worksData: WorksDataType[] = [
     photo: JobnicationPhoto,
     photoalt: "jobnication 写真",
     url: "https://jobnication.vercel.app/"
+  },
+  {
+    title: "violet",
+    description: "Webフロントエンドへの理解を深めるために作ったシンプルなブラウザです。これを作成したことでブラウザのレンダリングについてあるていどしっかりと理解できました。",
+    photo: VioletPhoto,
+    photoalt: "violet　写真",
+    url: "https://github.com/UMASHIBA1/violet"
   }
 ];
 
