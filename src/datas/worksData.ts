@@ -40,7 +40,6 @@ const worksData: WorksDataType[] = [
     description: "AndroidとPC(Web)両方に対応したクラウド同期型の時間割アプリ",
     photo: ClearTimeTablePhoto,
     photoalt: "クリア時間割写真",
-    url: "https://cleartimetable.umashiba.dev/landing-page/",
   },
   {
     title: "UMASHIBAPort2",
