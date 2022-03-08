@@ -16,7 +16,7 @@ import ColorPageTopSpace from "../Template/ColorPage/ColorPageTopSpace";
 
 const SkillsTagPage: React.FC = () => {
   const history = useHistory();
-  const { tagName = "" } = useParams();
+  const { tagName = "" } = useParams<{tagName: string}>();
   const [willCloseContent, changeWillCloseContent] = useState(false);
   const [willClosePage, changeWillClosePage] = useState(false);
   const [isAppearStartAnimation, changeIsAppearStartAnimation] = useState(true);

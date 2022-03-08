@@ -5,6 +5,12 @@ import UMASHIBAPort1photo from "../statics/UMASHIBAPort1.png";
 import UMASHIBAVirtualDOM from "../statics/UMASHIBAVirtualDOM.png";
 import UMASHIBAPort2Photo from "../statics/UMASHIBAPort2.png";
 import GCAPhoto from "../statics/GCA.png";
+import INIADFesTeaserSitePhoto from "../statics/iniad-fes-teaser-site.png";
+import INIADFesVenueSitePhoto from "../statics/iniad-fes-venue.png";
+import CSSAnimationInternshipPhoto from "../statics/cssAnimationInternship.png";
+import JobnicationPhoto from "../statics/jobnication.jpg";
+import VioletPhoto from "../statics/violet.png";
+
 
 export interface WorksDataType {
   title: string;
@@ -35,18 +41,18 @@ const worksData: WorksDataType[] = [
     description: "AndroidとPC(Web)両方に対応したクラウド同期型の時間割アプリ",
     photo: ClearTimeTablePhoto,
     photoalt: "クリア時間割写真",
-    url: "https://cleartimetable.umashiba.dev/landing-page/",
   },
   {
     title: "UMASHIBAPort2",
     description: "このサイトです。CSSアニメーションを重視して作成しました。",
     photo: UMASHIBAPort2Photo,
     photoalt: "UMASHIBAPort2写真",
-    url: "https://umashiba.dev/"
+    url: "https://umashiba.dev/",
   },
   {
     title: "GCA[非公開]",
-    description: "学校のチーム演習で作成したSlackアプリです。Slack上でGoogleカレンダーの閲覧、予定作成、削除、変更ができるようにしました。私は閲覧機能を担当しました。",
+    description:
+      "学校のチーム演習で作成したSlackアプリです。Slack上でGoogleカレンダーの閲覧、予定作成、削除、変更ができるようにしました。私は閲覧機能を担当しました。",
     photo: GCAPhoto,
     photoalt: "GCA写真",
   },
@@ -66,6 +72,41 @@ const worksData: WorksDataType[] = [
     photoalt: "UMASHIBAVirtualDOM写真",
     url: "https://github.com/UMASHIBA1/UMASHIBAVirtualDOM",
   },
+  {
+    title: "CSSアニメーションインターンシップ最終成果物",
+    description: "pixivのCSSアニメーションインターンシップで作った最終成果物です。とてもきれいなウェブサイトに仕上がりました！",
+    photo: CSSAnimationInternshipPhoto,
+    photoalt: "CSS アニメーションインターンシップ最終成果物画像",
+    url: "https://css-animation-intern.netlify.app/"
+  },
+  {
+    title: "INIAD-FES ティザーサイト2020",
+    description:
+      "私の通っている学部のオンライン学園祭のティザーサイトを作成させてもらいました。ニューモフィズムとCSSアニメーションを合わせた楽しいサイトになりました。",
+    photo: INIADFesTeaserSitePhoto,
+    photoalt: "INIAD-FES ティザーサイト写真",
+    url: "https://teaser-site2020.vercel.app/",
+  },
+  {
+    title: "INIAD-FES 会場サイト",
+    description: "私の通っている学部のオンライン学園祭のバーチャルキャンパスを作成させてもらいました。",
+    photo: INIADFesVenueSitePhoto,
+    photoalt: "INIAD-FES 会場サイト",
+    url: "https://github.com/UMASHIBA1/iniad-fes-online-2020-venue"
+  },
+  {
+    title: "jobnication",
+    description: "学校の演習で作ったアプリです。バックエンドを担当しました。",
+    photo: JobnicationPhoto,
+    photoalt: "jobnication 写真",
+  },
+  {
+    title: "violet",
+    description: "Webフロントエンドへの理解を深めるために作ったシンプルなブラウザです。これを作成したことでブラウザのレンダリングについてある程度しっかりと理解できました。",
+    photo: VioletPhoto,
+    photoalt: "violet　写真",
+    url: "https://github.com/UMASHIBA1/violet"
+  }
 ];
 
 export default worksData;
